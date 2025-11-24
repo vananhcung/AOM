@@ -1108,15 +1108,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/device-service/api/device/search?location-id=102",
-							"protocol": "http",
+							"raw": "https://baotrisd.vn:8443/device-service/api/device/search?location-id=102",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"baotrisd",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8443",
 							"path": [
 								"device-service",
 								"api",
@@ -1126,8 +1124,7 @@
 							"query": [
 								{
 									"key": "location-id",
-									"value": "102",
-									"type": "text"
+									"value": "102"
 								}
 							]
 						}
