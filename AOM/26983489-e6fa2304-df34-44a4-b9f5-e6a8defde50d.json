@@ -3497,10 +3497,14 @@
 							]
 						},
 						"url": {
-							"raw": "{{HOST}}/file-manager-service/api/file/upload-with-thumbnail",
+							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file/upload-with-thumbnail",
+							"protocol": "https",
 							"host": [
-								"{{HOST}}"
+								"demo",
+								"ezgo",
+								"vn"
 							],
+							"port": "8284",
 							"path": [
 								"file-manager-service",
 								"api",
