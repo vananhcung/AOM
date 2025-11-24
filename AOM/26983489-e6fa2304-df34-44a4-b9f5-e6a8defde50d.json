@@ -1205,6 +1205,513 @@
 			"id": "26983489-dba9aa2b-e9f3-4c2c-bc82-ee3a6cdf4baf"
 		},
 		{
+			"name": "sự cố thật",
+			"item": [
+				{
+					"name": "86 - Tạo sự cố",
+					"id": "26983489-0918c460-0714-40fd-abb8-b971c5fcdae0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeCode\": \"INCIDENT\",\r\n  \"parentId\": null,\r\n  \"name\": \"Rơ le nhiệt độ biến tần báo lỗi\",\r\n  \"status\": \"DONE\",\r\n  \"refId\": null,\r\n  \"refCode\": null,\r\n  \"refName\": null,\r\n  \"refStatus\": null,\r\n  \"startTime\": null,\r\n  \"description\": \"kiểm tra điện trở dây, đo thông mạch, kiểm tra tiếp xúc chân rơ le, đế rơ le\",\r\n  \"note\": \"hẹ hẹ hẹ\",\r\n  \"executorId\": \"068a47ed-165e-4d6a-9ab5-88ed0833ca93\",\r\n  \"signUrl\": \"https://\",\r\n  \"child\": [\r\n        {\r\n        \"typeCode\": \"INCIDENT_DEVICE\",\r\n        \"name\": null,\r\n        \"refId\": 1761,\r\n        \"refCode\": \"P-2001A\",\r\n        \"refName\": \"Bơm thô A-1B\",\r\n        \"refStatus\": \"STOPPING\",\r\n        \"startTime\": null,\r\n        \"description\": \"kiểm tra điện trở dây, đo thông mạch, kiểm tra tiếp xúc chân rơ le, đế rơ le\",\r\n        \"executorId\": \"068a47ed-165e-4d6a-9ab5-88ed0833ca93\",\r\n        \"signUrl\": \"https://\",\r\n        \"child\": []\r\n        }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "listTypeCode",
+									"value": "LOGBOOK_ME",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "đánh giá sự cố",
+					"id": "26983489-4ce89900-fc60-471f-ab96-67f34041fe6c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeCode\": \"INCIDENT_EVALUATION\",\r\n  \"parentId\": 26181,\r\n  \"name\": \"Rơ le nhiệt độ biến tần báo lỗi\",\r\n  \"status\": \"DONE\",\r\n  \"refId\": null,\r\n  \"refCode\": null,\r\n  \"refName\": null,\r\n  \"refStatus\": null,\r\n  \"startTime\": null,\r\n  \"description\": \"kiểm tra điện trở dây, đo thông mạch, kiểm tra tiếp xúc chân rơ le, đế rơ le\",\r\n  \"note\": \"hẹ hẹ hẹ\",\r\n  \"executorId\": \"068a47ed-165e-4d6a-9ab5-88ed0833ca93\",\r\n  \"signUrl\": \"https://\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "listTypeCode",
+									"value": "LOGBOOK_ME",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "166 - Tìm kiếm thiệt bị theo mã và tên",
+					"id": "26983489-3ad244d8-b972-412b-8c32-51179a8d579c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Kim Giang GHJFK \",\r\n    \"type\": \"HOUSES_UNDER_7_FLOORS\",\r\n    \"businessSector\": \"PRESS_POSTAL\",\r\n    \"fullAddress\": \"104 Kim Giang Thanh Xuan Ha Noi\",\r\n    \"provinceId\": 386,\r\n    \"districtId\": 2782,\r\n    \"latitude\": 24.22546,\r\n    \"longitude\": 105.36578,\r\n    \"roomModelList\": [\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 1\"\r\n        },\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 2\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/device-service/api/device/search?limit=10&offset=0&keyword=P2001A",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"device-service",
+								"api",
+								"device",
+								"search"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "keyword",
+									"value": "P2001A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "571- Lấy công việc từ sự cố",
+					"id": "26983489-311349d8-b131-4c15-92f4-b1de7f9d970d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/by-source?sourceId=20703",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"by-source"
+							],
+							"query": [
+								{
+									"key": "sourceId",
+									"value": "20703",
+									"type": "text"
+								},
+								{
+									"key": null,
+									"value": "20703",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-7eaddba0-16d1-4210-8458-c66ddef824f8"
+		},
+		{
+			"name": "công việc thật",
+			"item": [
+				{
+					"name": "212 - Tìm kiếm vật tư cho công việc",
+					"id": "26983489-beafe361-9f2b-45a3-bccb-d64d692a01ed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/product-service/api/product/search?keyword=dầu&offset=0&limit=10",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"product-service",
+								"api",
+								"product",
+								"search"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "dầu"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy chi tiết công việc",
+					"id": "26983489-5b04be6d-744a-467c-9350-acf158a20ce5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26381",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"26381"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "139: Tìm kiếm công việc",
+					"id": "26983489-4064556f-c429-4e7e-ac33-5a3342097555",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/search?type=LOGBOOK_SCADA&offset=0&limit=20&keyword=Ghi sổ SCADA khu 1 10h&executorId=068a47ed-165e-4d6a-9ab5-88ed0833ca93",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"search"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "1763571600",
+									"disabled": true
+								},
+								{
+									"key": "to",
+									"value": "1762880400",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "LOGBOOK_SCADA"
+								},
+								{
+									"key": "status",
+									"value": "DONE",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "keyword",
+									"value": "Ghi sổ SCADA khu 1 10h",
+									"type": "text"
+								},
+								{
+									"key": "executorId",
+									"value": "068a47ed-165e-4d6a-9ab5-88ed0833ca93",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "158 - Lấy danh sách công việc hết hạn",
+					"id": "26983489-df9718ca-e552-4b9f-93e5-7c9855ca4524",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/overdue?check-point=1763710861&offset=0&limit=20",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"overdue"
+							],
+							"query": [
+								{
+									"key": "check-point",
+									"value": "1763710861"
+								},
+								{
+									"key": "type",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload with thumbnail",
+					"id": "26983489-db70bdf6-748b-4869-aabb-d4e480f189b5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/quoca/Downloads/File/Work/Prompt Engineering - Từ Mơ hồ thành Pro Print.pdf"
+								},
+								{
+									"key": "thumbnail",
+									"type": "file",
+									"src": "/C:/Users/quoca/Downloads/File/Work/Prompt Engineering - Từ Mơ hồ thành Pro Print.pdf"
+								},
+								{
+									"key": "mime-type",
+									"value": "file/pdf",
+									"type": "text"
+								},
+								{
+									"key": "ref-id",
+									"value": "dev-1",
+									"type": "text"
+								},
+								{
+									"key": "ref-type",
+									"value": "DEVICE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{HOST}}/file-manager-service/api/file/upload-with-thumbnail",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"file-manager-service",
+								"api",
+								"file",
+								"upload-with-thumbnail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "danh sách thông báo",
+					"id": "26983489-f6c85102-9377-4c1f-90a7-fb7c4276e5e8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Kim Giang GHJFK \",\r\n    \"type\": \"HOUSES_UNDER_7_FLOORS\",\r\n    \"businessSector\": \"PRESS_POSTAL\",\r\n    \"fullAddress\": \"104 Kim Giang Thanh Xuan Ha Noi\",\r\n    \"provinceId\": 386,\r\n    \"districtId\": 2782,\r\n    \"latitude\": 24.22546,\r\n    \"longitude\": 105.36578,\r\n    \"roomModelList\": [\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 1\"\r\n        },\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 2\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/notification-service/api/notification?limit=10&offset=0",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"notification-service",
+								"api",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-431de72b-e69c-46e4-936e-f75c7ca80541"
+		},
+		{
 			"name": "ghi sổ",
 			"item": [
 				{
