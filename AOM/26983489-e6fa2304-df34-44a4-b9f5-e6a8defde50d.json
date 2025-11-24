@@ -9,7 +9,7 @@
 			"name": "login",
 			"item": [
 				{
-					"name": "login keycloak",
+					"name": "login keycloak- test",
 					"event": [
 						{
 							"listen": "test",
