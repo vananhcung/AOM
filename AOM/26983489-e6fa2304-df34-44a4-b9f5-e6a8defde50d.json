@@ -2748,15 +2748,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/device-service/api/location?limit=10&offset=0",
-							"protocol": "http",
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/location?limit=10&offset=0",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"demo",
+								"ezgo",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8284",
 							"path": [
 								"device-service",
 								"api",
@@ -2795,15 +2794,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/device-service/api/device/search?location-id=102",
-							"protocol": "http",
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/device/search?location-id=102",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"demo",
+								"ezgo",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8284",
 							"path": [
 								"device-service",
 								"api",
@@ -2813,8 +2811,7 @@
 							"query": [
 								{
 									"key": "location-id",
-									"value": "102",
-									"type": "text"
+									"value": "102"
 								}
 							]
 						}
@@ -2841,15 +2838,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://192.168.1.134:8089/file-manager-service/api/file/object-files?ref-id=238&ref-type=PRODUCT&limit=10&offset=0",
-							"protocol": "http",
+							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file/object-files?ref-id=238&ref-type=PRODUCT&limit=10&offset=0",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"demo",
+								"ezgo",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8284",
 							"path": [
 								"file-manager-service",
 								"api",
