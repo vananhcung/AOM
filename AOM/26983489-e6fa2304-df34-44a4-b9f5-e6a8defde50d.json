@@ -623,6 +623,588 @@
 			"id": "26983489-5c8e0a3b-e861-4de3-96cd-061f8a19602d"
 		},
 		{
+			"name": "thiết bị",
+			"item": [
+				{
+					"name": "149 - Lấy danh sách thiết bị",
+					"id": "26983489-23f45d8e-ab7c-4c48-93d1-793fbd2e2e34",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/device?offset=0&limit=10",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"device-service",
+								"api",
+								"device"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "danh sách thông số thiết bị",
+					"id": "26983489-60e67133-4e02-4fa9-a89c-8c4cfa1df9dc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"product-service",
+								"api",
+								"product-specification",
+								"search"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "product-id",
+									"value": "234"
+								},
+								{
+									"key": "keyword",
+									"value": "động"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "danh sách tài liệu",
+					"id": "26983489-9eeb4dab-a239-406b-aef8-365a299e2a55",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"product-service",
+								"api",
+								"product-specification",
+								"search"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "product-id",
+									"value": "234"
+								},
+								{
+									"key": "keyword",
+									"value": "động"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chỉ số mới nhất",
+					"id": "26983489-a1ed56b4-1086-46cb-9e73-2c7ebd374b63",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/telemetry-service/api/metric-log?source-id=1561&source-type=DEVICE",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"telemetry-service",
+								"api",
+								"metric-log"
+							],
+							"query": [
+								{
+									"key": "source-id",
+									"value": "1561"
+								},
+								{
+									"key": "source-type",
+									"value": "DEVICE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "danh sách loại ghi sổ",
+					"id": "26983489-4f32269b-9fa1-4acc-9283-cba7ea83d936",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/type/by-root-and-ref?root-code=LOGBOOK_SCADA&ref-id=1561",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"type",
+								"by-root-and-ref"
+							],
+							"query": [
+								{
+									"key": "root-code",
+									"value": "LOGBOOK_SCADA"
+								},
+								{
+									"key": "ref-id",
+									"value": "1561"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy danh sách vị trí cha",
+					"id": "26983489-5f1bfcde-5f94-4c3b-a7a4-9b21d780aed1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/location/by-root?root-id=-1",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"device-service",
+								"api",
+								"location",
+								"by-root"
+							],
+							"query": [
+								{
+									"key": "root-id",
+									"value": "-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy danh sách vị trí con thuộc vị chí tra",
+					"id": "26983489-16e16963-4f77-43e3-a702-b22020f1589a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/location/by-root?root-id=101",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"device-service",
+								"api",
+								"location",
+								"by-root"
+							],
+							"query": [
+								{
+									"key": "root-id",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy chi tiết thiết bị",
+					"id": "26983489-91c35dd8-fee0-4d58-99c0-28fdcb1ec23c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/device/1583/detail",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"device-service",
+								"api",
+								"device",
+								"1583",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "164: Lấy lich sử ghi sổ SCADA/ME/công việc/sự cố",
+					"id": "26983489-de9f406f-42b7-4798-8d50-cf319ccba66c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/object-tasks?limit=10&offset=0&type-code=LOGBOOK_ME&ref-id=1561&status=DONE",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"object-tasks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "type-code",
+									"value": "LOGBOOK_ME",
+									"description": "LOGBOOK_SCADA, MTN, INCIDENT , INCIDENT_DEVICE"
+								},
+								{
+									"key": "ref-id",
+									"value": "1561"
+								},
+								{
+									"key": "status",
+									"value": "DONE",
+									"description": "DONE, IN_PROGRESS, TO_DO"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "234 - Lấy danh sách tất cả khu vực",
+					"id": "26983489-72da305b-9f80-48f8-bb47-d8b2d35de8e2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/device-service/api/location?limit=10&offset=0",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"device-service",
+								"api",
+								"location"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "235: Lấy danh sách thiết bị của 1 vị trí",
+					"id": "26983489-c086a86d-04cf-4832-8283-02f3b8d14161",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/device-service/api/device/search?location-id=102",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"device-service",
+								"api",
+								"device",
+								"search"
+							],
+							"query": [
+								{
+									"key": "location-id",
+									"value": "102",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "236: lấy danh sách file của thiết bị",
+					"id": "26983489-b12a20f0-214e-4f96-b675-0c02fe084a1f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2MTExOTU3OTcsImlhdCI6MTc0NzI4MjE5NywianRpIjoiZGIzMjg3OGEtZGUyMC00M2Q2LThhNmYtNTViNjk5YjBhMTBiIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6ImFhODI0NDU4LWE4NjEtNDczMy1hMzY0LTRkOThmZDJmMzNkMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFvbS1hcHAiLCJzaWQiOiIzMjQxYjAxNy1kZTg2LTRmZmItYmNhOC01ZTE1Y2JkNjMwMTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vd3d3LmtleWNsb2FrLm9yZy8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtYW9tIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwidmlldy1yZWFsbSIsIm1hbmFnZS1pZGVudGl0eS1wcm92aWRlcnMiLCJpbXBlcnNvbmF0aW9uIiwicmVhbG0tYWRtaW4iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwiZGVsZXRlLWFjY291bnQiLCJtYW5hZ2UtY29uc2VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkN1bmcgQW5oIFTDuiBo4buNaG8gVMO6IiwicHJlZmVycmVkX3VzZXJuYW1lIjoiY3VuZ2FuaHR1QGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJDdW5nIEFuaCBUw7ogaOG7jWhvIiwiZmFtaWx5X25hbWUiOiJUw7oiLCJlbWFpbCI6ImN1bmdhbmh0dUBnbWFpbC5jb20ifQ.m9TaVquNc0BXlXqRtABZh_bgLOteGsRcjkhUiqF0j0NuxrbnNAqfLMKT_cP1zKsRvtl34ZRradqy4ryfMkFClxaCgwBuvYQCBYf_BhmfMV7h945oJ9yo11AgdSR3HuCoj642zNUrPq8JKs0_Bh5qLAP2ppT9YMNq81GHq7ZYj1yYFt2rqKcK9t3JZH40hUk5cWa4w9ppwT_RQ1v5UOt6ZZKShUS0YAEqbMhhDF_GxOjbbURXCaQwOdhWtK0FGmuI4Rw8DcFw-Q1aee2x-3K7JWLfl31tjan_RpR-Jj_JapOFBI02W3yP9vFxVHrooIcL0AmCc0Q29p9bBVtek5bI-A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.134:8089/file-manager-service/api/file/object-files?ref-id=238&ref-type=PRODUCT&limit=10&offset=0",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"file-manager-service",
+								"api",
+								"file",
+								"object-files"
+							],
+							"query": [
+								{
+									"key": "ref-id",
+									"value": "238"
+								},
+								{
+									"key": "ref-type",
+									"value": "PRODUCT",
+									"description": "product"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-dba9aa2b-e9f3-4c2c-bc82-ee3a6cdf4baf"
+		},
+		{
 			"name": "ghi sổ",
 			"item": [
 				{
