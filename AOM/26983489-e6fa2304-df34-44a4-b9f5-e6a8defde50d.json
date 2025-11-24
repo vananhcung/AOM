@@ -399,14 +399,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/aom-service/api/task/25990",
+							"raw": "https://baotrisd.vn:8443/aom-service/api/task/25990",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"aom-service",
 								"api",
