@@ -6,6 +6,182 @@
 	},
 	"item": [
 		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login keycloak",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {},
+								"id": "63422101-86b9-490b-9e35-894d18a42db5"
+							}
+						}
+					],
+					"id": "26983489-3ec52137-3212-48ba-99a7-2a52e4660346",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "aom-app",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "SfY23WqxubPKyc40OG2S80a62csRXfMn",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8025/realms/AOM/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8025",
+							"path": [
+								"realms",
+								"AOM",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login keycloak - thật",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59963155-34a3-4996-8818-76822a2fab51",
+								"exec": [
+									"// pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "640f2f1e-f835-4aa6-85e6-f6ba0e1ac1cd",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"id": "26983489-2203a5b6-b789-4265-9422-578436ee8dd1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "curl/7.68.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "aom-app",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "qF2BuUKzSacKXHJcuhArUx1xxNM0W8bG",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://account.baotrisd.vn:8443/realms/AOM/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"account",
+								"baotrisd",
+								"vn"
+							],
+							"port": "8443",
+							"path": [
+								"realms",
+								"AOM",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-cf9acc46-2e0e-4f6d-a53b-fb58c6e7a8d2"
+		},
+		{
 			"name": "ghi sổ thật",
 			"item": [
 				{
@@ -3061,183 +3237,7 @@
 			"id": "26983489-5d13764e-eb7d-4b9a-a2a1-e4e43404222a"
 		},
 		{
-			"name": "login",
-			"item": [
-				{
-					"name": "login keycloak",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {},
-								"id": "63422101-86b9-490b-9e35-894d18a42db5"
-							}
-						}
-					],
-					"id": "26983489-3ec52137-3212-48ba-99a7-2a52e4660346",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "client_id",
-									"value": "aom-app",
-									"type": "text"
-								},
-								{
-									"key": "client_secret",
-									"value": "SfY23WqxubPKyc40OG2S80a62csRXfMn",
-									"type": "text"
-								},
-								{
-									"key": "grant_type",
-									"value": "password",
-									"type": "text"
-								},
-								{
-									"key": "username",
-									"value": "admin@gmail.com",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "123",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "https://demo.ezgo.vn:8025/realms/AOM/protocol/openid-connect/token",
-							"protocol": "https",
-							"host": [
-								"demo",
-								"ezgo",
-								"vn"
-							],
-							"port": "8025",
-							"path": [
-								"realms",
-								"AOM",
-								"protocol",
-								"openid-connect",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "login keycloak - thật",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "59963155-34a3-4996-8818-76822a2fab51",
-								"exec": [
-									"// pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "640f2f1e-f835-4aa6-85e6-f6ba0e1ac1cd",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						}
-					],
-					"id": "26983489-2203a5b6-b789-4265-9422-578436ee8dd1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "User-Agent",
-								"value": "curl/7.68.0",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "client_id",
-									"value": "aom-app",
-									"type": "text"
-								},
-								{
-									"key": "client_secret",
-									"value": "qF2BuUKzSacKXHJcuhArUx1xxNM0W8bG",
-									"type": "text"
-								},
-								{
-									"key": "grant_type",
-									"value": "password",
-									"type": "text"
-								},
-								{
-									"key": "username",
-									"value": "admin@gmail.com",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "123",
-									"type": "text"
-								},
-								{
-									"key": "",
-									"value": "",
-									"type": "text",
-									"disabled": true
-								}
-							]
-						},
-						"url": {
-							"raw": "https://account.baotrisd.vn:8443/realms/AOM/protocol/openid-connect/token",
-							"protocol": "https",
-							"host": [
-								"account",
-								"baotrisd",
-								"vn"
-							],
-							"port": "8443",
-							"path": [
-								"realms",
-								"AOM",
-								"protocol",
-								"openid-connect",
-								"token"
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"id": "26983489-cf9acc46-2e0e-4f6d-a53b-fb58c6e7a8d2"
-		},
-		{
-			"name": "công việc",
+			"name": "công việc test",
 			"item": [
 				{
 					"name": "212 - Tìm kiếm vật tư cho công việc",
