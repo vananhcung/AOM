@@ -1254,15 +1254,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/task-manager-service/api/task",
-							"protocol": "http",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"baotrisd",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
@@ -1270,8 +1268,8 @@
 							],
 							"query": [
 								{
-									"key": "listTypeCode",
-									"value": "LOGBOOK_ME",
+									"key": "",
+									"value": "",
 									"disabled": true
 								}
 							]
