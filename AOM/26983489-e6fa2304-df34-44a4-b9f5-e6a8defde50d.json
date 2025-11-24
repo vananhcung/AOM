@@ -2985,15 +2985,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/device-service/api/device/search?limit=10&offset=0&keyword=P2001A",
-							"protocol": "http",
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/device/search?limit=10&offset=0&keyword=P2001A",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"demo",
+								"ezgo",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8284",
 							"path": [
 								"device-service",
 								"api",
@@ -3028,15 +3027,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/by-source?sourceId=20703",
-							"protocol": "http",
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/by-source?sourceId=20703",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"demo",
+								"ezgo",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8284",
 							"path": [
 								"task-manager-service",
 								"api",
@@ -3046,8 +3044,7 @@
 							"query": [
 								{
 									"key": "sourceId",
-									"value": "20703",
-									"type": "text"
+									"value": "20703"
 								},
 								{
 									"key": null,
