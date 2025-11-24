@@ -10,6 +10,623 @@
 			"item": [
 				{
 					"name": "74- lấy danh sách tất cả ca ghi sổ",
+					"id": "26983489-7ba33308-e3fa-440c-946e-fd1daa35d14f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task?type-code =LOGBOOK_ME&offset=0&limit=10",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "type-code ",
+									"value": "LOGBOOK_ME",
+									"type": "text"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "79- Tạo task để bắt đầu ghi sổ",
+					"id": "26983489-a0608084-e7fe-40b1-a2fb-0d80f39f3f84",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/by-template?template-id=221",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"by-template"
+							],
+							"query": [
+								{
+									"key": "template-id",
+									"value": "221"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "78 - Lấy danh sách task mẫu",
+					"id": "26983489-894c4409-2ebc-4430-a16f-4ae96a8fb617",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/template?offset=0&limit=10&type-code=LOGBOOK_SCADA",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"template"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "type-code",
+									"value": "LOGBOOK_SCADA",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "81 - Lấy chi tiết ghi sổ đang thực hiện",
+					"id": "26983489-753aa65a-acc4-4e6c-8f58-3daadf87c64c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26321",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"26321"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "104- Lấy danh sách người dùng",
+					"id": "26983489-be47cfdb-2729-4605-904c-d9b62119e9cc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/user-manager-service/api/user",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"user-manager-service",
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "98 - Hoàn thành ghi sổ ca làm việc",
+					"id": "26983489-dee10f3d-3d3f-4bfb-b7df-3fe584278014",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"signUrl\": \"https://aom.vn/sign.jpg\",\r\n  \"executor\": {\r\n    \"dateCreated\": \"2025-11-21T03:20:59.912Z\",\r\n    \"dateModified\": \"2025-11-21T03:20:59.912Z\",\r\n    \"id\": \"ab78cf14-d551-4991-9779-28dbd457e61b\",\r\n    \"username\": \"abc@gmail.com.vn\",\r\n    \"fullName\": \"Trần Thiên Thanh\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/25821/complete",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"25821",
+								"complete"
+							],
+							"query": [
+								{
+									"key": "type-code ",
+									"value": "LOGBOOK_ME",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "83 - Ghi sổ 1 nhóm thiết bị",
+					"id": "26983489-0ac3bc48-8b02-4c8b-be4a-0e189f32d80e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDg0MzgsImlhdCI6MTc2MzY5NDgzOCwianRpIjoiN2RmZjJmNmMtODVlYy00YmIxLTljNjUtYmI3OWJmNmE1YWZjIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMmRmZmE1YWUtOGU2Ni00MGQ2LThjMmMtMzVlNjNiMzk5MjBmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.T98u4B8XYiBqlnzqNh6yPBsD9bb4-AVxzQkEC858Ve6X6fK7XO-Ir9vVSJOz45q3jX3zSXz1afUJjYDEbdxwi_OniTFfj0DGSd8D8qrgbzg0gaIKYsO_xGUrLP-ui7U6yq_wx8w6h2ZrZ9j56HhVhx4G4OQc2iC6O6f03DB6L6VAphom_VRndJKOe-4LzcaB19uxrbZ2AAGL_TQzGgxKIa1ae5nboSGNKEaJ1jiFse17e8UH28J7BTBOFj9gnca8kKINvd6BolAHmE7CZ8_GrMQ_VvYPoswOImo9xq3g17UyOKCHXVWPAUa-SNdBNslzpGWIDJ-4l2GpgfYl2tAjjA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"note\": null,\r\n    \"refStatus\": null,\r\n    \"status\": \"DONE\",\r\n    \"customField\": null,\r\n    \"child\": [ \r\n      {\r\n        \"id\": 25797,\r\n        \"note\": \"6/6/2025\",\r\n        \"refStatus\": \"WORKING\",\r\n        \"status\": \"DONE\",\r\n        \"customField\": [\r\n          {\r\n            \"customFieldId\": 1104,\r\n            \"data\": \"1\"\r\n          },\r\n          {\r\n            \"customFieldId\": 1105,\r\n            \"data\": \"2\"\r\n          },\r\n           {\r\n            \"customFieldId\": 1106,\r\n            \"data\": \"3\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/25741",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"25741"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "85 - lấy thông tin chi tiết nhóm thiết bị ghi sổ",
+					"id": "26983489-278998d0-216e-445b-b4cd-6bac739786fe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/aom-service/api/task/25990",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"aom-service",
+								"api",
+								"task",
+								"25990"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "102 - scan   QR code",
+					"id": "26983489-5d4ac3fd-3ca3-4d31-97dc-e09b8b72f3bc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26061/child?child-ref-id=621",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"26061",
+								"child"
+							],
+							"query": [
+								{
+									"key": "listTypeCode",
+									"value": "LOGBOOK_ME",
+									"disabled": true
+								},
+								{
+									"key": "child-ref-id",
+									"value": "621"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "94: Xóa file ảnh đã upload",
+					"id": "26983489-e9c7461d-ac9b-4d52-9c72-c26b1160eac2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDg0MzgsImlhdCI6MTc2MzY5NDgzOCwianRpIjoiN2RmZjJmNmMtODVlYy00YmIxLTljNjUtYmI3OWJmNmE1YWZjIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMmRmZmE1YWUtOGU2Ni00MGQ2LThjMmMtMzVlNjNiMzk5MjBmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.T98u4B8XYiBqlnzqNh6yPBsD9bb4-AVxzQkEC858Ve6X6fK7XO-Ir9vVSJOz45q3jX3zSXz1afUJjYDEbdxwi_OniTFfj0DGSd8D8qrgbzg0gaIKYsO_xGUrLP-ui7U6yq_wx8w6h2ZrZ9j56HhVhx4G4OQc2iC6O6f03DB6L6VAphom_VRndJKOe-4LzcaB19uxrbZ2AAGL_TQzGgxKIa1ae5nboSGNKEaJ1jiFse17e8UH28J7BTBOFj9gnca8kKINvd6BolAHmE7CZ8_GrMQ_VvYPoswOImo9xq3g17UyOKCHXVWPAUa-SNdBNslzpGWIDJ-4l2GpgfYl2tAjjA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": [
+										"/C:/Users/quoca/Downloads/Picture/GST/image_2023_08_15T03_56_35_919Z.png",
+										"/C:/Users/quoca/Downloads/Picture/GST/image_2023_10_17T09_47_27_998Z.png"
+									],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file/103",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"file-manager-service",
+								"api",
+								"file",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "93: upload ảnh lên hệ thống",
+					"id": "26983489-69e8469b-19e6-4b64-932f-e2ff79a74f05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDg0MzgsImlhdCI6MTc2MzY5NDgzOCwianRpIjoiN2RmZjJmNmMtODVlYy00YmIxLTljNjUtYmI3OWJmNmE1YWZjIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMmRmZmE1YWUtOGU2Ni00MGQ2LThjMmMtMzVlNjNiMzk5MjBmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.T98u4B8XYiBqlnzqNh6yPBsD9bb4-AVxzQkEC858Ve6X6fK7XO-Ir9vVSJOz45q3jX3zSXz1afUJjYDEbdxwi_OniTFfj0DGSd8D8qrgbzg0gaIKYsO_xGUrLP-ui7U6yq_wx8w6h2ZrZ9j56HhVhx4G4OQc2iC6O6f03DB6L6VAphom_VRndJKOe-4LzcaB19uxrbZ2AAGL_TQzGgxKIa1ae5nboSGNKEaJ1jiFse17e8UH28J7BTBOFj9gnca8kKINvd6BolAHmE7CZ8_GrMQ_VvYPoswOImo9xq3g17UyOKCHXVWPAUa-SNdBNslzpGWIDJ-4l2GpgfYl2tAjjA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/ASUS VivoBook/OneDrive/Desktop/1tblvzrk4hg.png"
+								},
+								{
+									"key": "ref-id",
+									"value": "dev-1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ref-type",
+									"value": "DEVICE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"file-manager-service",
+								"api",
+								"file"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy ca ghi sổ đã hoàn thành",
+					"id": "26983489-9298ac2f-2e76-4ef7-a82c-7fb3aca5e2cd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/26090/detail",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"26090",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-5c8e0a3b-e861-4de3-96cd-061f8a19602d"
+		},
+		{
+			"name": "ghi sổ",
+			"item": [
+				{
+					"name": "74- lấy danh sách tất cả ca ghi sổ",
 					"id": "26983489-fc6906fb-8d82-49db-bd3c-07ab04caba80",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
