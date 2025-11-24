@@ -20,7 +20,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJYUw5dFIxeVk0Tlg0OE40a0E5WWVfNFFaY0EwRl8xYW1tT2RBT1hXWWdFIn0.eyJleHAiOjI2Mjc4Njg5MjMsImlhdCI6MTc2Mzk1NTMyMywianRpIjoiZGMzMzIzNDctMjJjZC00ZDRmLWJkNTgtZjFlYzUxMjgwODdlIiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50LmJhb3RyaXNkLnZuOjg0NDMvcmVhbG1zL0FPTSIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9tLWNtcyIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiM2QwNDA5ZTQtZTRkMi00NWE1LWI5ODQtZTViNzlkMmJiZmRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYW9tLWFwcCIsInNpZCI6IjYxNTljYzBhLWI2NDEtNGRlMy1hMjgxLTFjZmEzZWZjM2U4NyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9iYW90cmlzZC52bjo4NDQzIiwiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1hb20iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYW9tLWNtcyI6eyJyb2xlcyI6WyJ1bWFfcHJvdGVjdGlvbiJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJkZWxldGUtYWNjb3VudCIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20iLCJsb2NhbGUiOiJ2aS1WTiIsImdpdmVuX25hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9.lVYsWQFEZmE_y-M5hDJOL2mGRU2N15pmwWVjfoayMcP-DKJEiQDjPuKVQXf-Mhbd-zLB5uyoeygR911ZMjY0puFO7lMgwHFnfGZskm_WK2wpaaYzVZtKCnbCLyFtHZUACM-8CykzKGaLoZW9xmc_z-jEbeXsSFrk2BJ_41ONik1GHwPlTBh0gKk1laj9K1HlyH3MLfvu5U6Nvx3AmfUVIGVX9wtzF_UhEkZQfRUHziu1OODVnZUm0k5iI9XsT_vE_zFaLitJerdfcyPVyaUFJSycwqQJthRmkvkG3dh4ukOVzJKIFsy3fmyzwOLnOMkPPEIjOjTBo3bmYsj-CIwoKQ",
 									"type": "string"
 								}
 							]
@@ -37,14 +37,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task?type-code =LOGBOOK_ME&offset=0&limit=10",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task?type-code=INCIDENT&offset=0&limit=10",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
@@ -52,19 +51,16 @@
 							],
 							"query": [
 								{
-									"key": "type-code ",
-									"value": "LOGBOOK_ME",
-									"type": "text"
+									"key": "type-code",
+									"value": "INCIDENT"
 								},
 								{
 									"key": "offset",
-									"value": "0",
-									"type": "text"
+									"value": "0"
 								},
 								{
 									"key": "limit",
-									"value": "10",
-									"type": "text"
+									"value": "10"
 								}
 							]
 						}
