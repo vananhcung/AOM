@@ -2277,15 +2277,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/26090/detail",
-							"protocol": "http",
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26090/detail",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"demo",
+								"ezgo",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8284",
 							"path": [
 								"task-manager-service",
 								"api",
