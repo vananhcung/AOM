@@ -1,0 +1,1925 @@
+{
+	"info": {
+		"_postman_id": "26983489-e6fa2304-df34-44a4-b9f5-e6a8defde50d",
+		"name": "AOM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ghi sổ",
+			"item": [
+				{
+					"name": "74- lấy danh sách tất cả ca ghi sổ",
+					"id": "26983489-7ba33308-e3fa-440c-946e-fd1daa35d14f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task?type-code =LOGBOOK_ME&offset=0&limit=10",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "type-code ",
+									"value": "LOGBOOK_ME",
+									"type": "text"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "79- Tạo task để bắt đầu ghi sổ",
+					"id": "26983489-a0608084-e7fe-40b1-a2fb-0d80f39f3f84",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/by-template?template-id=221",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"by-template"
+							],
+							"query": [
+								{
+									"key": "template-id",
+									"value": "221"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "78 - Lấy danh sách task mẫu",
+					"id": "26983489-894c4409-2ebc-4430-a16f-4ae96a8fb617",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/template?offset=0&limit=10&type-code=LOGBOOK_SCADA",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"template"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "type-code",
+									"value": "LOGBOOK_SCADA",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "81 - Lấy chi tiết ghi sổ đang thực hiện",
+					"id": "26983489-753aa65a-acc4-4e6c-8f58-3daadf87c64c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26321",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"26321"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "104- Lấy danh sách người dùng",
+					"id": "26983489-be47cfdb-2729-4605-904c-d9b62119e9cc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/user-manager-service/api/user",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"user-manager-service",
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "98 - Hoàn thành ghi sổ ca làm việc",
+					"id": "26983489-dee10f3d-3d3f-4bfb-b7df-3fe584278014",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"signUrl\": \"https://aom.vn/sign.jpg\",\r\n  \"executor\": {\r\n    \"dateCreated\": \"2025-11-21T03:20:59.912Z\",\r\n    \"dateModified\": \"2025-11-21T03:20:59.912Z\",\r\n    \"id\": \"ab78cf14-d551-4991-9779-28dbd457e61b\",\r\n    \"username\": \"abc@gmail.com.vn\",\r\n    \"fullName\": \"Trần Thiên Thanh\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/25821/complete",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"25821",
+								"complete"
+							],
+							"query": [
+								{
+									"key": "type-code ",
+									"value": "LOGBOOK_ME",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "83 - Ghi sổ 1 nhóm thiết bị",
+					"id": "26983489-0ac3bc48-8b02-4c8b-be4a-0e189f32d80e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDg0MzgsImlhdCI6MTc2MzY5NDgzOCwianRpIjoiN2RmZjJmNmMtODVlYy00YmIxLTljNjUtYmI3OWJmNmE1YWZjIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMmRmZmE1YWUtOGU2Ni00MGQ2LThjMmMtMzVlNjNiMzk5MjBmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.T98u4B8XYiBqlnzqNh6yPBsD9bb4-AVxzQkEC858Ve6X6fK7XO-Ir9vVSJOz45q3jX3zSXz1afUJjYDEbdxwi_OniTFfj0DGSd8D8qrgbzg0gaIKYsO_xGUrLP-ui7U6yq_wx8w6h2ZrZ9j56HhVhx4G4OQc2iC6O6f03DB6L6VAphom_VRndJKOe-4LzcaB19uxrbZ2AAGL_TQzGgxKIa1ae5nboSGNKEaJ1jiFse17e8UH28J7BTBOFj9gnca8kKINvd6BolAHmE7CZ8_GrMQ_VvYPoswOImo9xq3g17UyOKCHXVWPAUa-SNdBNslzpGWIDJ-4l2GpgfYl2tAjjA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"note\": null,\r\n    \"refStatus\": null,\r\n    \"status\": \"DONE\",\r\n    \"customField\": null,\r\n    \"child\": [ \r\n      {\r\n        \"id\": 25797,\r\n        \"note\": \"6/6/2025\",\r\n        \"refStatus\": \"WORKING\",\r\n        \"status\": \"DONE\",\r\n        \"customField\": [\r\n          {\r\n            \"customFieldId\": 1104,\r\n            \"data\": \"1\"\r\n          },\r\n          {\r\n            \"customFieldId\": 1105,\r\n            \"data\": \"2\"\r\n          },\r\n           {\r\n            \"customFieldId\": 1106,\r\n            \"data\": \"3\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/25741",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"25741"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "85 - lấy thông tin chi tiết nhóm thiết bị ghi sổ",
+					"id": "26983489-278998d0-216e-445b-b4cd-6bac739786fe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/aom-service/api/task/25990",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"aom-service",
+								"api",
+								"task",
+								"25990"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "102 - scan   QR code",
+					"id": "26983489-5d4ac3fd-3ca3-4d31-97dc-e09b8b72f3bc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26061/child?child-ref-id=621",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"26061",
+								"child"
+							],
+							"query": [
+								{
+									"key": "listTypeCode",
+									"value": "LOGBOOK_ME",
+									"disabled": true
+								},
+								{
+									"key": "child-ref-id",
+									"value": "621"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "94: Xóa file ảnh đã upload",
+					"id": "26983489-e9c7461d-ac9b-4d52-9c72-c26b1160eac2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDg0MzgsImlhdCI6MTc2MzY5NDgzOCwianRpIjoiN2RmZjJmNmMtODVlYy00YmIxLTljNjUtYmI3OWJmNmE1YWZjIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMmRmZmE1YWUtOGU2Ni00MGQ2LThjMmMtMzVlNjNiMzk5MjBmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.T98u4B8XYiBqlnzqNh6yPBsD9bb4-AVxzQkEC858Ve6X6fK7XO-Ir9vVSJOz45q3jX3zSXz1afUJjYDEbdxwi_OniTFfj0DGSd8D8qrgbzg0gaIKYsO_xGUrLP-ui7U6yq_wx8w6h2ZrZ9j56HhVhx4G4OQc2iC6O6f03DB6L6VAphom_VRndJKOe-4LzcaB19uxrbZ2AAGL_TQzGgxKIa1ae5nboSGNKEaJ1jiFse17e8UH28J7BTBOFj9gnca8kKINvd6BolAHmE7CZ8_GrMQ_VvYPoswOImo9xq3g17UyOKCHXVWPAUa-SNdBNslzpGWIDJ-4l2GpgfYl2tAjjA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": [
+										"/C:/Users/quoca/Downloads/Picture/GST/image_2023_08_15T03_56_35_919Z.png",
+										"/C:/Users/quoca/Downloads/Picture/GST/image_2023_10_17T09_47_27_998Z.png"
+									],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file/103",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"file-manager-service",
+								"api",
+								"file",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "93: upload ảnh lên hệ thống",
+					"id": "26983489-69e8469b-19e6-4b64-932f-e2ff79a74f05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDg0MzgsImlhdCI6MTc2MzY5NDgzOCwianRpIjoiN2RmZjJmNmMtODVlYy00YmIxLTljNjUtYmI3OWJmNmE1YWZjIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMmRmZmE1YWUtOGU2Ni00MGQ2LThjMmMtMzVlNjNiMzk5MjBmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.T98u4B8XYiBqlnzqNh6yPBsD9bb4-AVxzQkEC858Ve6X6fK7XO-Ir9vVSJOz45q3jX3zSXz1afUJjYDEbdxwi_OniTFfj0DGSd8D8qrgbzg0gaIKYsO_xGUrLP-ui7U6yq_wx8w6h2ZrZ9j56HhVhx4G4OQc2iC6O6f03DB6L6VAphom_VRndJKOe-4LzcaB19uxrbZ2AAGL_TQzGgxKIa1ae5nboSGNKEaJ1jiFse17e8UH28J7BTBOFj9gnca8kKINvd6BolAHmE7CZ8_GrMQ_VvYPoswOImo9xq3g17UyOKCHXVWPAUa-SNdBNslzpGWIDJ-4l2GpgfYl2tAjjA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/ASUS VivoBook/OneDrive/Desktop/1tblvzrk4hg.png"
+								},
+								{
+									"key": "ref-id",
+									"value": "dev-1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ref-type",
+									"value": "DEVICE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"file-manager-service",
+								"api",
+								"file"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy ca ghi sổ đã hoàn thành",
+					"id": "26983489-9298ac2f-2e76-4ef7-a82c-7fb3aca5e2cd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/26090/detail",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"26090",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-5c8e0a3b-e861-4de3-96cd-061f8a19602d"
+		},
+		{
+			"name": "thiết bị",
+			"item": [
+				{
+					"name": "149 - Lấy danh sách thiết bị",
+					"id": "26983489-fd9fe3a0-7648-4ab3-8628-83a33496d94b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/device?offset=0&limit=10",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"device-service",
+								"api",
+								"device"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "danh sách thông số thiết bị",
+					"id": "26983489-0a6dceb4-4bcb-44ca-95ef-b359bddd2856",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"product-service",
+								"api",
+								"product-specification",
+								"search"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "product-id",
+									"value": "234"
+								},
+								{
+									"key": "keyword",
+									"value": "động"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "danh sách tài liệu",
+					"id": "26983489-c5680157-0a54-4b97-97f5-e8153991887b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"product-service",
+								"api",
+								"product-specification",
+								"search"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "product-id",
+									"value": "234"
+								},
+								{
+									"key": "keyword",
+									"value": "động"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chỉ số mới nhất",
+					"id": "26983489-407ad566-e99b-44fa-bcca-c455e6582d62",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/telemetry-service/api/metric-log?source-id=1561&source-type=DEVICE",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"telemetry-service",
+								"api",
+								"metric-log"
+							],
+							"query": [
+								{
+									"key": "source-id",
+									"value": "1561"
+								},
+								{
+									"key": "source-type",
+									"value": "DEVICE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "danh sách loại ghi sổ",
+					"id": "26983489-2e50f143-f42d-41bf-a4bc-ad38455291a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/type/by-root-and-ref?root-code=LOGBOOK_SCADA&ref-id=1561",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"type",
+								"by-root-and-ref"
+							],
+							"query": [
+								{
+									"key": "root-code",
+									"value": "LOGBOOK_SCADA"
+								},
+								{
+									"key": "ref-id",
+									"value": "1561"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy danh sách vị trí cha",
+					"id": "26983489-f087c9cd-3c8d-453c-ad39-43b010fe2e73",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/location/by-root?root-id=-1",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"device-service",
+								"api",
+								"location",
+								"by-root"
+							],
+							"query": [
+								{
+									"key": "root-id",
+									"value": "-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy danh sách vị trí con thuộc vị chí tra",
+					"id": "26983489-92c0b204-21c5-4203-ae00-06581cd592c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/location/by-root?root-id=101",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"device-service",
+								"api",
+								"location",
+								"by-root"
+							],
+							"query": [
+								{
+									"key": "root-id",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy chi tiết thiết bị",
+					"id": "26983489-f823db61-dd9a-49c5-a063-e6e79a9673e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/device/1583/detail",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"device-service",
+								"api",
+								"device",
+								"1583",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "164: Lấy lich sử ghi sổ SCADA/ME/công việc/sự cố",
+					"id": "26983489-6f933754-aa8a-460e-acf3-124a28200e63",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/object-tasks?limit=10&offset=0&type-code=LOGBOOK_ME&ref-id=1561&status=DONE",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"object-tasks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "type-code",
+									"value": "LOGBOOK_ME",
+									"description": "LOGBOOK_SCADA, MTN, INCIDENT , INCIDENT_DEVICE"
+								},
+								{
+									"key": "ref-id",
+									"value": "1561"
+								},
+								{
+									"key": "status",
+									"value": "DONE",
+									"description": "DONE, IN_PROGRESS, TO_DO"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "234 - Lấy danh sách tất cả khu vực",
+					"id": "26983489-2d662cf5-7434-4008-84ee-9c6686ff0ba0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/device-service/api/location?limit=10&offset=0",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"device-service",
+								"api",
+								"location"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "235: Lấy danh sách thiết bị của 1 vị trí",
+					"id": "26983489-702e2387-27d5-4d23-b6c5-f04cb054f5ae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/device-service/api/device/search?location-id=102",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"device-service",
+								"api",
+								"device",
+								"search"
+							],
+							"query": [
+								{
+									"key": "location-id",
+									"value": "102",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "236: lấy danh sách file của thiết bị",
+					"id": "26983489-24a5b378-5d9a-4213-a758-23027ac86c2d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2MTExOTU3OTcsImlhdCI6MTc0NzI4MjE5NywianRpIjoiZGIzMjg3OGEtZGUyMC00M2Q2LThhNmYtNTViNjk5YjBhMTBiIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6ImFhODI0NDU4LWE4NjEtNDczMy1hMzY0LTRkOThmZDJmMzNkMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFvbS1hcHAiLCJzaWQiOiIzMjQxYjAxNy1kZTg2LTRmZmItYmNhOC01ZTE1Y2JkNjMwMTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vd3d3LmtleWNsb2FrLm9yZy8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtYW9tIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwidmlldy1yZWFsbSIsIm1hbmFnZS1pZGVudGl0eS1wcm92aWRlcnMiLCJpbXBlcnNvbmF0aW9uIiwicmVhbG0tYWRtaW4iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwiZGVsZXRlLWFjY291bnQiLCJtYW5hZ2UtY29uc2VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkN1bmcgQW5oIFTDuiBo4buNaG8gVMO6IiwicHJlZmVycmVkX3VzZXJuYW1lIjoiY3VuZ2FuaHR1QGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJDdW5nIEFuaCBUw7ogaOG7jWhvIiwiZmFtaWx5X25hbWUiOiJUw7oiLCJlbWFpbCI6ImN1bmdhbmh0dUBnbWFpbC5jb20ifQ.m9TaVquNc0BXlXqRtABZh_bgLOteGsRcjkhUiqF0j0NuxrbnNAqfLMKT_cP1zKsRvtl34ZRradqy4ryfMkFClxaCgwBuvYQCBYf_BhmfMV7h945oJ9yo11AgdSR3HuCoj642zNUrPq8JKs0_Bh5qLAP2ppT9YMNq81GHq7ZYj1yYFt2rqKcK9t3JZH40hUk5cWa4w9ppwT_RQ1v5UOt6ZZKShUS0YAEqbMhhDF_GxOjbbURXCaQwOdhWtK0FGmuI4Rw8DcFw-Q1aee2x-3K7JWLfl31tjan_RpR-Jj_JapOFBI02W3yP9vFxVHrooIcL0AmCc0Q29p9bBVtek5bI-A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.134:8089/file-manager-service/api/file/object-files?ref-id=238&ref-type=PRODUCT&limit=10&offset=0",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"file-manager-service",
+								"api",
+								"file",
+								"object-files"
+							],
+							"query": [
+								{
+									"key": "ref-id",
+									"value": "238"
+								},
+								{
+									"key": "ref-type",
+									"value": "PRODUCT",
+									"description": "product"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-b44eb682-e0b9-48ac-b1ea-bb253cbc5e4f"
+		},
+		{
+			"name": "sự cố",
+			"item": [
+				{
+					"name": "86 - Tạo sự cố",
+					"id": "26983489-77fcd0d0-9038-4b9a-8fbd-50e0ad80f4d5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeCode\": \"INCIDENT\",\r\n  \"parentId\": null,\r\n  \"name\": \"Rơ le nhiệt độ biến tần báo lỗi\",\r\n  \"status\": \"DONE\",\r\n  \"refId\": null,\r\n  \"refCode\": null,\r\n  \"refName\": null,\r\n  \"refStatus\": null,\r\n  \"startTime\": null,\r\n  \"description\": \"kiểm tra điện trở dây, đo thông mạch, kiểm tra tiếp xúc chân rơ le, đế rơ le\",\r\n  \"note\": \"hẹ hẹ hẹ\",\r\n  \"executorId\": \"068a47ed-165e-4d6a-9ab5-88ed0833ca93\",\r\n  \"signUrl\": \"https://\",\r\n  \"child\": [\r\n        {\r\n        \"typeCode\": \"INCIDENT_DEVICE\",\r\n        \"name\": null,\r\n        \"refId\": 1761,\r\n        \"refCode\": \"P-2001A\",\r\n        \"refName\": \"Bơm thô A-1B\",\r\n        \"refStatus\": \"STOPPING\",\r\n        \"startTime\": null,\r\n        \"description\": \"kiểm tra điện trở dây, đo thông mạch, kiểm tra tiếp xúc chân rơ le, đế rơ le\",\r\n        \"executorId\": \"068a47ed-165e-4d6a-9ab5-88ed0833ca93\",\r\n        \"signUrl\": \"https://\",\r\n        \"child\": []\r\n        }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "listTypeCode",
+									"value": "LOGBOOK_ME",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "đánh giá sự cố",
+					"id": "26983489-be373030-41fa-4210-a552-517b0ac3ab09",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeCode\": \"INCIDENT_EVALUATION\",\r\n  \"parentId\": 26181,\r\n  \"name\": \"Rơ le nhiệt độ biến tần báo lỗi\",\r\n  \"status\": \"DONE\",\r\n  \"refId\": null,\r\n  \"refCode\": null,\r\n  \"refName\": null,\r\n  \"refStatus\": null,\r\n  \"startTime\": null,\r\n  \"description\": \"kiểm tra điện trở dây, đo thông mạch, kiểm tra tiếp xúc chân rơ le, đế rơ le\",\r\n  \"note\": \"hẹ hẹ hẹ\",\r\n  \"executorId\": \"068a47ed-165e-4d6a-9ab5-88ed0833ca93\",\r\n  \"signUrl\": \"https://\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "listTypeCode",
+									"value": "LOGBOOK_ME",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "166 - Tìm kiếm thiệt bị theo mã và tên",
+					"id": "26983489-c788cee0-cde1-4cdd-ac33-893c402d0a67",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Kim Giang GHJFK \",\r\n    \"type\": \"HOUSES_UNDER_7_FLOORS\",\r\n    \"businessSector\": \"PRESS_POSTAL\",\r\n    \"fullAddress\": \"104 Kim Giang Thanh Xuan Ha Noi\",\r\n    \"provinceId\": 386,\r\n    \"districtId\": 2782,\r\n    \"latitude\": 24.22546,\r\n    \"longitude\": 105.36578,\r\n    \"roomModelList\": [\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 1\"\r\n        },\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 2\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8089/device-service/api/device/search?limit=10&offset=0&keyword=P2001A",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"device-service",
+								"api",
+								"device",
+								"search"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "keyword",
+									"value": "P2001A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "571- Lấy công việc từ sự cố",
+					"id": "26983489-2cbd005b-8025-46d1-bcf4-e02c11cd929b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/by-source?sourceId=20703",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8089",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"by-source"
+							],
+							"query": [
+								{
+									"key": "sourceId",
+									"value": "20703",
+									"type": "text"
+								},
+								{
+									"key": null,
+									"value": "20703",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-5d13764e-eb7d-4b9a-a2a1-e4e43404222a"
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login keycloak",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {},
+								"id": "63422101-86b9-490b-9e35-894d18a42db5"
+							}
+						}
+					],
+					"id": "26983489-3ec52137-3212-48ba-99a7-2a52e4660346",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "aom-app",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "SfY23WqxubPKyc40OG2S80a62csRXfMn",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8025/realms/AOM/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8025",
+							"path": [
+								"realms",
+								"AOM",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login keycloak - thật",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59963155-34a3-4996-8818-76822a2fab51",
+								"exec": [
+									"// pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "640f2f1e-f835-4aa6-85e6-f6ba0e1ac1cd",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"id": "26983489-2203a5b6-b789-4265-9422-578436ee8dd1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "curl/7.68.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "aom-app",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "qF2BuUKzSacKXHJcuhArUx1xxNM0W8bG",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://account.baotrisd.vn:8443/realms/AOM/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"account",
+								"baotrisd",
+								"vn"
+							],
+							"port": "8443",
+							"path": [
+								"realms",
+								"AOM",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-cf9acc46-2e0e-4f6d-a53b-fb58c6e7a8d2"
+		},
+		{
+			"name": "công việc",
+			"item": [
+				{
+					"name": "212 - Tìm kiếm vật tư cho công việc",
+					"id": "26983489-fb9eca7f-cc42-4e89-be25-c15ff11b1e4f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/product-service/api/product/search?keyword=dầu&offset=0&limit=10",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"product-service",
+								"api",
+								"product",
+								"search"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "dầu"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy chi tiết công việc",
+					"id": "26983489-712c80ee-3c54-4894-8613-1b1099fc40b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26381",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"26381"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "139: Tìm kiếm công việc",
+					"id": "26983489-28034365-71de-4627-88ac-7814ea705146",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/search?type=LOGBOOK_SCADA&offset=0&limit=20&keyword=Ghi sổ SCADA khu 1 10h&executorId=068a47ed-165e-4d6a-9ab5-88ed0833ca93",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"search"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "1763571600",
+									"disabled": true
+								},
+								{
+									"key": "to",
+									"value": "1762880400",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "LOGBOOK_SCADA"
+								},
+								{
+									"key": "status",
+									"value": "DONE",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "keyword",
+									"value": "Ghi sổ SCADA khu 1 10h",
+									"type": "text"
+								},
+								{
+									"key": "executorId",
+									"value": "068a47ed-165e-4d6a-9ab5-88ed0833ca93",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "158 - Lấy danh sách công việc hết hạn",
+					"id": "26983489-3be270eb-2d14-4661-b79f-cfc9f8972f30",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/overdue?check-point=1763710861&offset=0&limit=20",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task",
+								"overdue"
+							],
+							"query": [
+								{
+									"key": "check-point",
+									"value": "1763710861"
+								},
+								{
+									"key": "type",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload with thumbnail",
+					"id": "26983489-6447ad69-0c29-4261-b60c-9d2ef80c7c8e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/quoca/Downloads/File/Work/Prompt Engineering - Từ Mơ hồ thành Pro Print.pdf"
+								},
+								{
+									"key": "thumbnail",
+									"type": "file",
+									"src": "/C:/Users/quoca/Downloads/File/Work/Prompt Engineering - Từ Mơ hồ thành Pro Print.pdf"
+								},
+								{
+									"key": "mime-type",
+									"value": "file/pdf",
+									"type": "text"
+								},
+								{
+									"key": "ref-id",
+									"value": "dev-1",
+									"type": "text"
+								},
+								{
+									"key": "ref-type",
+									"value": "DEVICE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{HOST}}/file-manager-service/api/file/upload-with-thumbnail",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"file-manager-service",
+								"api",
+								"file",
+								"upload-with-thumbnail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "danh sách thông báo",
+					"id": "26983489-f25c5f6e-f015-4674-b5c5-86f99e2e3fb7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Kim Giang GHJFK \",\r\n    \"type\": \"HOUSES_UNDER_7_FLOORS\",\r\n    \"businessSector\": \"PRESS_POSTAL\",\r\n    \"fullAddress\": \"104 Kim Giang Thanh Xuan Ha Noi\",\r\n    \"provinceId\": 386,\r\n    \"districtId\": 2782,\r\n    \"latitude\": 24.22546,\r\n    \"longitude\": 105.36578,\r\n    \"roomModelList\": [\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 1\"\r\n        },\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 2\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/notification-service/api/notification?limit=10&offset=0",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"notification-service",
+								"api",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "26983489-4c678f78-091c-41f1-882c-d2d8e832460d"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{accessTokenKeyCloak}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				],
+				"id": "281f858d-5f41-4787-9f0b-a189038f942e"
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				],
+				"id": "1b677974-566f-47f8-8574-bbe018d381e7"
+			}
+		}
+	]
+}
