@@ -690,7 +690,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://baotrisd.vn:8443/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"raw": "https://baotrisd.vn:8443/product-service/api/product-specification/search?limit=100&offset=0&product-id=234",
 							"protocol": "https",
 							"host": [
 								"baotrisd",
@@ -717,8 +717,9 @@
 									"value": "234"
 								},
 								{
-									"key": "keyword",
-									"value": "động"
+									"key": "",
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
