@@ -96,14 +96,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/by-template?template-id=221",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task/by-template?template-id=221",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
