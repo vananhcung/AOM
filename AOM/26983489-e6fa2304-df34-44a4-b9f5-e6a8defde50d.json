@@ -2686,15 +2686,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/object-tasks?limit=10&offset=0&type-code=LOGBOOK_ME&ref-id=1561&status=DONE",
-							"protocol": "http",
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/object-tasks?limit=10&offset=0&type-code=LOGBOOK_ME&ref-id=1561&status=DONE",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"demo",
+								"ezgo",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8284",
 							"path": [
 								"task-manager-service",
 								"api",
