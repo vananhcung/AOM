@@ -745,7 +745,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://baotrisd.vn:8443/product-service/api/product-specification/search?limit=100&offset=0&product-id=234",
+							"raw": "https://baotrisd.vn:8443/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&ref-type=PRODUCT",
 							"protocol": "https",
 							"host": [
 								"baotrisd",
@@ -772,9 +772,8 @@
 									"value": "234"
 								},
 								{
-									"key": "",
-									"value": "",
-									"disabled": true
+									"key": "ref-type",
+									"value": "PRODUCT"
 								}
 							]
 						}
