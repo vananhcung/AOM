@@ -148,14 +148,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/template?offset=0&limit=10&type-code=LOGBOOK_SCADA",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/template?offset=0&limit=10&type-code=LOGBOOK_SCADA",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
@@ -164,18 +163,15 @@
 							"query": [
 								{
 									"key": "offset",
-									"value": "0",
-									"type": "text"
+									"value": "0"
 								},
 								{
 									"key": "limit",
-									"value": "10",
-									"type": "text"
+									"value": "10"
 								},
 								{
 									"key": "type-code",
-									"value": "LOGBOOK_SCADA",
-									"type": "text"
+									"value": "LOGBOOK_SCADA"
 								}
 							]
 						}
@@ -258,14 +254,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/user-manager-service/api/user",
+							"raw": "https://baotrisd.vn:8443/user-manager-service/api/user",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"user-manager-service",
 								"api",
