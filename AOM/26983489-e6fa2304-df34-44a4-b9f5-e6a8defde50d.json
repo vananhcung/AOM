@@ -933,14 +933,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/device-service/api/location/by-root?root-id=101",
+							"raw": "https://baotrisd.vn:8443/device-service/api/location/by-root?root-id=101",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"device-service",
 								"api",
