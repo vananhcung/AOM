@@ -640,7 +640,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/device-service/api/device?offset=0&limit=10",
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/device?offset=0&limit=100",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -660,7 +660,7 @@
 								},
 								{
 									"key": "limit",
-									"value": "10"
+									"value": "100"
 								}
 							]
 						}
