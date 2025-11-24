@@ -1440,14 +1440,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26381",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task/26381",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
@@ -1468,14 +1467,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/search?type=LOGBOOK_SCADA&offset=0&limit=20&keyword=Ghi sổ SCADA khu 1 10h&executorId=068a47ed-165e-4d6a-9ab5-88ed0833ca93",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task/search?type=LOGBOOK_SCADA&offset=0&limit=20&keyword=Ghi sổ SCADA khu 1 10h&executorId=068a47ed-165e-4d6a-9ab5-88ed0833ca93",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
@@ -1512,13 +1510,11 @@
 								},
 								{
 									"key": "keyword",
-									"value": "Ghi sổ SCADA khu 1 10h",
-									"type": "text"
+									"value": "Ghi sổ SCADA khu 1 10h"
 								},
 								{
 									"key": "executorId",
-									"value": "068a47ed-165e-4d6a-9ab5-88ed0833ca93",
-									"type": "text"
+									"value": "068a47ed-165e-4d6a-9ab5-88ed0833ca93"
 								}
 							]
 						}
