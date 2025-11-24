@@ -2447,7 +2447,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file/object-files?ref-id=238&ref-type=PRODUCT&limit=21&offset=0",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -2456,27 +2456,27 @@
 							],
 							"port": "8284",
 							"path": [
-								"product-service",
+								"file-manager-service",
 								"api",
-								"product-specification",
-								"search"
+								"file",
+								"object-files"
 							],
 							"query": [
 								{
+									"key": "ref-id",
+									"value": "238"
+								},
+								{
+									"key": "ref-type",
+									"value": "PRODUCT"
+								},
+								{
 									"key": "limit",
-									"value": "100"
+									"value": "21"
 								},
 								{
 									"key": "offset",
 									"value": "0"
-								},
-								{
-									"key": "product-id",
-									"value": "234"
-								},
-								{
-									"key": "keyword",
-									"value": "động"
 								}
 							]
 						}
