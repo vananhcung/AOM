@@ -2367,7 +2367,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -2395,8 +2395,9 @@
 									"value": "234"
 								},
 								{
-									"key": "keyword",
-									"value": "động"
+									"key": "",
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
