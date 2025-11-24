@@ -1337,15 +1337,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/by-source?sourceId=20703",
-							"protocol": "http",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task/by-source?sourceId=20703",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"baotrisd",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
@@ -1355,12 +1353,11 @@
 							"query": [
 								{
 									"key": "sourceId",
-									"value": "20703",
-									"type": "text"
+									"value": "20703"
 								},
 								{
 									"key": null,
-									"value": "20703",
+									"value": "",
 									"type": "text",
 									"disabled": true
 								}
