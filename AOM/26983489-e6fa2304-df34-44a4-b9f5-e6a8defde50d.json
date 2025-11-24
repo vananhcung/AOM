@@ -800,14 +800,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/telemetry-service/api/metric-log?source-id=1561&source-type=DEVICE",
+							"raw": "https://baotrisd.vn:8443/telemetry-service/api/metric-log?source-id=1561&source-type=DEVICE",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"telemetry-service",
 								"api",
@@ -846,14 +845,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/type/by-root-and-ref?root-code=LOGBOOK_SCADA&ref-id=1561",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/type/by-root-and-ref?root-code=LOGBOOK_SCADA&ref-id=1561",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
