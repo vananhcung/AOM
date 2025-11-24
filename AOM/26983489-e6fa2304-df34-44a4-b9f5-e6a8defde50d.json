@@ -1063,15 +1063,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/device-service/api/location?limit=10&offset=0",
-							"protocol": "http",
+							"raw": "https://baotrisd.vn:8443/device-service/api/location?limit=10&offset=0",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"baotrisd",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8443",
 							"path": [
 								"device-service",
 								"api",
