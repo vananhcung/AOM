@@ -426,14 +426,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26061/child?child-ref-id=621",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task/26061/child?child-ref-id=621",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
@@ -490,14 +489,13 @@
 							]
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file/103",
+							"raw": "https://baotrisd.vn:8443/file-manager-service/api/file/103",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"file-manager-service",
 								"api",
@@ -550,14 +548,13 @@
 							]
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/file-manager-service/api/file",
+							"raw": "https://baotrisd.vn:8443/file-manager-service/api/file",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"file-manager-service",
 								"api",
@@ -586,15 +583,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.1.134:8089/task-manager-service/api/task/26090/detail",
-							"protocol": "http",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task/26090/detail",
+							"protocol": "https",
 							"host": [
-								"192",
-								"168",
-								"1",
-								"134"
+								"baotrisd",
+								"vn"
 							],
-							"port": "8089",
+							"port": "8443",
 							"path": [
 								"task-manager-service",
 								"api",
