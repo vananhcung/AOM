@@ -614,6 +614,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJYUw5dFIxeVk0Tlg0OE40a0E5WWVfNFFaY0EwRl8xYW1tT2RBT1hXWWdFIn0.eyJleHAiOjI2Mjc4NzM3OTIsImlhdCI6MTc2Mzk2MDE5MiwianRpIjoiYzQ0NzA3Y2UtMTgxNy00ZDg1LWJjYjgtNDdhZjQxYTk0NmMzIiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50LmJhb3RyaXNkLnZuOjg0NDMvcmVhbG1zL0FPTSIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9tLWNtcyIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiM2QwNDA5ZTQtZTRkMi00NWE1LWI5ODQtZTViNzlkMmJiZmRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYW9tLWFwcCIsInNpZCI6ImRmNDdkNGEzLWEzY2MtNGVjYi05ODVkLTU2MTZhYjk5NjNjZCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9iYW90cmlzZC52bjo4NDQzIiwiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1hb20iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYW9tLWNtcyI6eyJyb2xlcyI6WyJ1bWFfcHJvdGVjdGlvbiJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJkZWxldGUtYWNjb3VudCIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20iLCJsb2NhbGUiOiJ2aS1WTiIsImdpdmVuX25hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9.VG63ApMQFgOi9QvhTK6Jk6Y7ZG34n67NmCP4FbrAvM8ICfY13aF7UNr_nSLPEpNB_eI_fwtZsTrYWu7_kTfP9xfxU9Vod_jHUFkFpw3D99cpKYdNFI4o9y38ZiN9AAiZOqTeRXg_5Da2vRlrSLqCEy3FKLv4bctRLc9CFO5THoFeXSlJlZ7iPW0tjhPEwtE15RkxtPIm2-lRbZO5-OckUd2jdmxK2lhAqd8GLr6NIN5V9rkLXJ4eO5N-7ZGrOI3SqMxIz83yIG_43J76o8m5wCIcFxY-lYugDRMTGUoCH0O5o-e36lNx3XnVK3uJ1FxgfDTBaWALDmaGP0NWfI5XFg",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -659,6 +669,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJYUw5dFIxeVk0Tlg0OE40a0E5WWVfNFFaY0EwRl8xYW1tT2RBT1hXWWdFIn0.eyJleHAiOjI2Mjc4NzM3OTIsImlhdCI6MTc2Mzk2MDE5MiwianRpIjoiYzQ0NzA3Y2UtMTgxNy00ZDg1LWJjYjgtNDdhZjQxYTk0NmMzIiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50LmJhb3RyaXNkLnZuOjg0NDMvcmVhbG1zL0FPTSIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9tLWNtcyIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiM2QwNDA5ZTQtZTRkMi00NWE1LWI5ODQtZTViNzlkMmJiZmRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYW9tLWFwcCIsInNpZCI6ImRmNDdkNGEzLWEzY2MtNGVjYi05ODVkLTU2MTZhYjk5NjNjZCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9iYW90cmlzZC52bjo4NDQzIiwiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1hb20iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYW9tLWNtcyI6eyJyb2xlcyI6WyJ1bWFfcHJvdGVjdGlvbiJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJkZWxldGUtYWNjb3VudCIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20iLCJsb2NhbGUiOiJ2aS1WTiIsImdpdmVuX25hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9.VG63ApMQFgOi9QvhTK6Jk6Y7ZG34n67NmCP4FbrAvM8ICfY13aF7UNr_nSLPEpNB_eI_fwtZsTrYWu7_kTfP9xfxU9Vod_jHUFkFpw3D99cpKYdNFI4o9y38ZiN9AAiZOqTeRXg_5Da2vRlrSLqCEy3FKLv4bctRLc9CFO5THoFeXSlJlZ7iPW0tjhPEwtE15RkxtPIm2-lRbZO5-OckUd2jdmxK2lhAqd8GLr6NIN5V9rkLXJ4eO5N-7ZGrOI3SqMxIz83yIG_43J76o8m5wCIcFxY-lYugDRMTGUoCH0O5o-e36lNx3XnVK3uJ1FxgfDTBaWALDmaGP0NWfI5XFg",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -671,14 +691,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"raw": "https://baotrisd.vn:8443/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"product-service",
 								"api",
@@ -726,14 +745,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234&keyword=động",
+							"raw": "https://baotrisd.vn:8443/product-service/api/product-specification/search?limit=100&offset=0&product-id=234",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"product-service",
 								"api",
@@ -754,8 +772,9 @@
 									"value": "234"
 								},
 								{
-									"key": "keyword",
-									"value": "động"
+									"key": "",
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
