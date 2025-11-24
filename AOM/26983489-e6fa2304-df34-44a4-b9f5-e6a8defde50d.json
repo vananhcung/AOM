@@ -1654,14 +1654,13 @@
 							"raw": "{\r\n    \"name\": \"Kim Giang GHJFK \",\r\n    \"type\": \"HOUSES_UNDER_7_FLOORS\",\r\n    \"businessSector\": \"PRESS_POSTAL\",\r\n    \"fullAddress\": \"104 Kim Giang Thanh Xuan Ha Noi\",\r\n    \"provinceId\": 386,\r\n    \"districtId\": 2782,\r\n    \"latitude\": 24.22546,\r\n    \"longitude\": 105.36578,\r\n    \"roomModelList\": [\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 1\"\r\n        },\r\n        {\r\n            \"id\": null,\r\n            \"name\": \"Phong 2\"\r\n        }\r\n    ]\r\n}"
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/notification-service/api/notification?limit=10&offset=0",
+							"raw": "https://baotrisd.vn:8443/notification-service/api/notification?limit=10&offset=0",
 							"protocol": "https",
 							"host": [
-								"demo",
-								"ezgo",
+								"baotrisd",
 								"vn"
 							],
-							"port": "8284",
+							"port": "8443",
 							"path": [
 								"notification-service",
 								"api",
