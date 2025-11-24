@@ -2350,7 +2350,7 @@
 					"response": []
 				},
 				{
-					"name": "danh sách thông số thiết bị và tìm kiếm",
+					"name": "danh sách thông số thiết bị",
 					"id": "26983489-0a6dceb4-4bcb-44ca-95ef-b359bddd2856",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
