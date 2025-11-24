@@ -1,0 +1,1440 @@
+{
+	"info": {
+		"_postman_id": "27267237-6818-4b9d-931a-6dafba77653e",
+		"name": "SongQuiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26983489",
+		"_collection_link": "https://van-anh-7831.postman.co/workspace/v%C3%A2n-anh~69bf6a77-0097-4a3d-8696-0d7e1336a2de/collection/26983489-27267237-6818-4b9d-931a-6dafba77653e?action=share&source=collection_link&creator=26983489"
+	},
+	"item": [
+		{
+			"name": "Keycloak",
+			"item": [
+				{
+					"name": "LOGIN",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "song-quiz-web",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "produce48vnfp@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Taylor131289@",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "w38nqdTBPMIYekMrI7r43i0JQalDm6o9",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8025/realms/SONG_QUIZ_APP/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8025",
+							"path": [
+								"realms",
+								"SONG_QUIZ_APP",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "song-quiz-web",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "509984614760",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "w38nqdTBPMIYekMrI7r43i0JQalDm6o9",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8025/realms/SONG_QUIZ_APP/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8025",
+							"path": [
+								"realms",
+								"SONG_QUIZ_APP",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Package",
+			"item": [
+				{
+					"name": "129 mua gói, hủy gói, gia hạn gói",
+					"item": [
+						{
+							"name": "mua gói thành công",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessTokenKeyCloak}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[ { \"code\": \"GST_FAKE_KEY\", // cột package_code\r\n \"itemId\":null} ]  \r\n ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/subscribe-package",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"ezgo",
+										"vn"
+									],
+									"port": "8282",
+									"path": [
+										"billing-service",
+										"api",
+										"bill",
+										"subscribe-package"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "code không tồn tại",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessTokenKeyCloak}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[ { \"code\": \"PACKAGE_DAYyyyyy\", // cột package_code\r\n \"itemId\":null} ]  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/subscribe-package",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"ezgo",
+										"vn"
+									],
+									"port": "8282",
+									"path": [
+										"billing-service",
+										"api",
+										"bill",
+										"subscribe-package"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "đăng kí thất bại- đang có gói cước active",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessTokenKeyCloak}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[ { \"code\": \"PACKAGE_DAY\", // cột package_code\r\n \"itemId\":null} ]  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/subscribe-package",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"ezgo",
+										"vn"
+									],
+									"port": "8282",
+									"path": [
+										"billing-service",
+										"api",
+										"bill",
+										"subscribe-package"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "hủy gói - tài khoản chưa có gói",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessTokenKeyCloak}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[ { \"code\": \"PACKAGE_DAY\", // cột package_code\r\n \"itemId\":null} ]  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/cancel-subscription",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"ezgo",
+										"vn"
+									],
+									"port": "8282",
+									"path": [
+										"billing-service",
+										"api",
+										"bill",
+										"cancel-subscription"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "hủy gói thành công",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessTokenKeyCloak}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[ { \"code\": \"GST_FAKE_KEY\", // cột package_code\r\n \"itemId\":null} ]  \r\n \r\n // kiểm tra bảng bill_item_package xem cột status đã active chưa với lại có ngày hết hạn chưa?",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/cancel-subscription",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"ezgo",
+										"vn"
+									],
+									"port": "8282",
+									"path": [
+										"billing-service",
+										"api",
+										"bill",
+										"cancel-subscription"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gia hạn gói cước thành công",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessTokenKeyCloak}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[ { \"code\": \"GST_FAKE_KEY\", // cột package_code\r\n \"itemId\":null} ]  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/renew-subscription",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"ezgo",
+										"vn"
+									],
+									"port": "8282",
+									"path": [
+										"billing-service",
+										"api",
+										"bill",
+										"renew-subscription"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gia hạn gói cước không thành công - Tk chưa đăng kí gói cước",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessTokenKeyCloak}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[ { \"code\": \"PACKAGE_MONTH\", // cột package_code\r\n \"itemId\":null} ]  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/renew-subscription",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"ezgo",
+										"vn"
+									],
+									"port": "8282",
+									"path": [
+										"billing-service",
+										"api",
+										"bill",
+										"renew-subscription"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gia hạn gói cước không thành công - đang có gói cước active",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessTokenKeyCloak}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[ { \"code\": \"PACKAGE_DAY\", // cột package_code\r\n \"itemId\":null} ]  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/renew-subscription",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"ezgo",
+										"vn"
+									],
+									"port": "8282",
+									"path": [
+										"billing-service",
+										"api",
+										"bill",
+										"renew-subscription"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "5 lấy tổng điểm trong ngày và tổng điểm trong tháng của ngưởi chơi",
+			"item": [
+				{
+					"name": "thành công",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8282/song-quiz-service/api/point-overview",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8282",
+							"path": [
+								"song-quiz-service",
+								"api",
+								"point-overview"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "6 Kiểm tra đáp án người dùng chọn là đúng hay sai",
+			"item": [
+				{
+					"name": "kiểm tra chọn đán án sai",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uaId\": 1547,\r\n    \"answerId\": 2\r\n}\r\n\r\n//uaID: Id của UserAnswer\r\n\r\n//answerId: Id của answer",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8084/song-quiz-service/api/submit-answer",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8084",
+							"path": [
+								"song-quiz-service",
+								"api",
+								"submit-answer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kiểm tra chọn đán án đúng",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uaId\": 1117,\r\n    \"answerId\": 284\r\n}\r\n\r\n//uaID: Id của UserAnswer\r\n\r\n//answerId: Id của answer",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8084/song-quiz-app/submit-answer",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8084",
+							"path": [
+								"song-quiz-app",
+								"submit-answer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "câu tl và câu hỏi k tồn tại",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uaId\": 1117000,\r\n    \"answerId\": 2840000\r\n}\r\n\r\n//uaID: Id của UserAnswer\r\n\r\n//answerId: Id của câu trả lời",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8084/song-quiz-app/submit-answer",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8084",
+							"path": [
+								"song-quiz-app",
+								"submit-answer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "danh sách top",
+			"item": [
+				{
+					"name": "21 Lấy danh sách top 10 người có điểm cao nhất trong ngày",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8282/score-service/api/leaderboard/top-daily",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8282",
+							"path": [
+								"score-service",
+								"api",
+								"leaderboard",
+								"top-daily"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "88 danh sách top 10 người có điểm cao nhất trong tháng",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.ezgo.vn:8282/score-service/api/leaderboard/top-monthly",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8282",
+							"path": [
+								"score-service",
+								"api",
+								"leaderboard",
+								"top-monthly"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "107 Lấy danh sách giải thưởng",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{song quiz}}score-service/api/prize",
+							"host": [
+								"{{song quiz}}score-service"
+							],
+							"path": [
+								"api",
+								"prize"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "3  Lấy câu hỏi và các đáp án",
+			"item": [
+				{
+					"name": "thành công",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.134:8084/song-quiz-service/api/question",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8084",
+							"path": [
+								"song-quiz-service",
+								"api",
+								"question"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "98 lấy danh sách giải thưởng của tôi",
+			"item": [
+				{
+					"name": "thành công",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{song quiz}}score-service/api/leaderboard/award-list?offSet=0&limit=3",
+							"host": [
+								"{{song quiz}}score-service"
+							],
+							"path": [
+								"api",
+								"leaderboard",
+								"award-list"
+							],
+							"query": [
+								{
+									"key": "offSet",
+									"value": "0",
+									"description": "k truyền offset thì lấy mặc định 20 giải"
+								},
+								{
+									"key": "limit",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "24 trả thưởng cho KH",
+			"item": [
+				{
+					"name": "thành công",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{song quiz}}score-service/api/prize/receive",
+							"host": [
+								"{{song quiz}}score-service"
+							],
+							"path": [
+								"api",
+								"prize",
+								"receive"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "70 kiểm tra xem con lượt chơi sao, thêm sao khi đạt mốc",
+			"item": [
+				{
+					"name": "còn sao mà k còn lượt",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.134:8084/song-quiz-service/api/question?isStar=true",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8084",
+							"path": [
+								"song-quiz-service",
+								"api",
+								"question"
+							],
+							"query": [
+								{
+									"key": "isStar",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "còn lượt mà hết sao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.134:8084/song-quiz-service/api/question?isStar=true",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8084",
+							"path": [
+								"song-quiz-service",
+								"api",
+								"question"
+							],
+							"query": [
+								{
+									"key": "isStar",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "còn lượt và con sao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8084/song-quiz-service/api/question?isStar=true",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8084",
+							"path": [
+								"song-quiz-service",
+								"api",
+								"question"
+							],
+							"query": [
+								{
+									"key": "isStar",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "thành công và đạt mốc được + 1sao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.134:8084/song-quiz-service/api/question?isStar=true",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"134"
+							],
+							"port": "8084",
+							"path": [
+								"song-quiz-service",
+								"api",
+								"question"
+							],
+							"query": [
+								{
+									"key": "isStar",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "4 lấy số lượt chơi và số sao còn lại được chơi trong ngày",
+			"item": [
+				{
+					"name": "thành công",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{song quiz}}song-quiz-service/api/inventory",
+							"host": [
+								"{{song quiz}}song-quiz-service"
+							],
+							"path": [
+								"api",
+								"inventory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "82 mua thêm lượt",
+			"item": [
+				{
+					"name": "thành công",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[ { \"code\": \"ANPQ_DAY\", // cột package_code\r\n \"quantity\": 2 } ]  // số lượng mình muốn mua gói cước là mấy Vd là 2 thì mình trả gấp đôi số tiền ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/buy-product",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8282",
+							"path": [
+								"billing-service",
+								"api",
+								"bill",
+								"buy-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "thành công Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[ ]  // số lượng mình muốn mua gói cước là mấy Vd là 2 thì mình trả gấp đôi số tiền ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/buy-product",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8282",
+							"path": [
+								"billing-service",
+								"api",
+								"bill",
+								"buy-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "k tìm thấy mã sp",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[ { \"code\": \"ANPQ_DAYuyyyy\", // cột package_code\r\n \"quantity\": 2 } ]  // số lượng mình muốn mua gói cước là mấy Vd là 2 thì mình trả gấp đôi số tiền ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8282/billing-service/api/bill/buy-product",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8282",
+							"path": [
+								"billing-service",
+								"api",
+								"bill",
+								"buy-product"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "158 kiểm tra nếu còn quà chưa nhận",
+			"item": [
+				{
+					"name": "thành công",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessTokenKeyCloak}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{song quiz}}score-service/api/prize/mine-check",
+							"host": [
+								"{{song quiz}}score-service"
+							],
+							"path": [
+								"api",
+								"prize",
+								"mine-check"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null,
+									"description": "có quà trả ra true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "server thật",
+			"item": [
+				{
+					"name": "mua gói thật thành công",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlRlY4MVZ5WWtzLThYaUZ4RmlzRnpKMllVWkFXM0pnR3pzbHpOVC15YlVjIn0.eyJleHAiOjE3MzY0MjA0NzgsImlhdCI6MTczNjQyMDE3OCwianRpIjoiZWZhOWI3ZTctNjE5Mi00ZTQzLTg3OTctMDEzZDc2MzRjMWI1IiwiaXNzIjoiaHR0cHM6Ly9hcGltdXNpY2dhbWUubmF0Y29tLmNvbS5odC9yZWFsbXMvU09OR19RVUlaX0FQUCIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYWNjb3VudCJdLCJzdWIiOiI3OTE5OGQxMy1hY2I4LTRiZTItOWU2ZS1lNWQ4OGJlZGYyYzkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzb25nLXF1aXotd2ViIiwic2lkIjoiM2QyMzA5NjMtZjIyNS00OGI4LWEzN2MtOTY2NmFmOGMxNDc5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL211c2ljZ2FtZS5uYXRjb20uY29tLmh0Il0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbIm1hbmFnZS11c2VycyIsInZpZXctdXNlcnMiLCJxdWVyeS1ncm91cHMiLCJxdWVyeS11c2VycyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiNTA5MTIzNDU2IDUwOTEyMzQ1NiIsInByZWZlcnJlZF91c2VybmFtZSI6ImN1bmdhbmh0dSIsImdpdmVuX25hbWUiOiI1MDkxMjM0NTYiLCJmYW1pbHlfbmFtZSI6IjUwOTEyMzQ1NiJ9.Lul-d6eJEVlv-tJAvmKfmajAj0Ui_7rk8XUtCVEB6qH7YtGn_oBNBnYUmWtH02W0EUDr-SdJN6c-n5UpZibqAsxqPrgyLvHY6-sBBEZK7KpRInlBgd_96IEYtOvdxuDSRWdMvia10S_-snuRUODVO2Dnsuv9VliMU8P_ObRCDjEq0zZC8aYvIXKJYt4cgC4qTt9TG8x8WwZUU8bFbVQVYjU6tnbfEv41Z7whGVLwWeiMnppuw_sb55mmsMDEvLgxVXIa16-qz-kg9Od92Ku5Dbb6mDLZkslPFBGpEyOMBBgxzwwx5zet24kW9Mosbc3OE18iLL4tPsA6UGAbBN0Eyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[ { \"code\": \"IVR_RADIO_4G\", // cột package_code\r\n \"itemId\":null} ]  \r\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://musicgame.natcom.com.ht/billing-service/api/bill/subscribe-package",
+							"protocol": "https",
+							"host": [
+								"musicgame",
+								"natcom",
+								"com",
+								"ht"
+							],
+							"path": [
+								"billing-service",
+								"api",
+								"bill",
+								"subscribe-package"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy số lượt chơi và số sao còn lại",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlRlY4MVZ5WWtzLThYaUZ4RmlzRnpKMllVWkFXM0pnR3pzbHpOVC15YlVjIn0.eyJleHAiOjE3NjA5MzQxMDIsImlhdCI6MTc2MDkzMzgwMiwianRpIjoiOWI3MzMxMWYtOTU5YS00MDA4LWEzZWItYzVhZjYwOTY5ZjNiIiwiaXNzIjoiaHR0cHM6Ly9hcGltdXNpY2dhbWUubmF0Y29tLmNvbS5odC9yZWFsbXMvU09OR19RVUlaX0FQUCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2YzlmMzM5NS0wYzE0LTQxYTQtODVjOC05YWRjMWM0ZmJkNTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzb25nLXF1aXotd2ViIiwic2lkIjoiNmZkNWVkY2YtZjAyMC00YmJjLTliOTYtMGIzMmU2NjczNGQ1IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL211c2ljZ2FtZS5uYXRjb20uY29tLmh0Il0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXNvbmdfcXVpel9hcHAiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiI1MDk0MjQyMjEyMSJ9.KBYJMgNljB4OuPgSyHD-92L1zrwuUr9N5Wj2cVqCA8d84YEITOd3D7sTVaqM5YOM_Gs3SBrvM2hoYWIzJNraahDAXJCazlhezQgnhcbUGzkL2UNV4k4KuGpJPBoEwr8hDZPDae9yDfdSncNg-44ho20Qp9-dMGfalHN23c0UrDxqLaagz2ZdRopp5xoYwhz2bh2WPKYPHYXPben-qQl4kgZJqj8krutu_A0YaxpxHAMZqU_fLASupnUmSArsD4PVgWygNfYxDvCBDIYW09RLdWFK7OH-Q1-XbufP0gwRjVUG2CM_GXoGgt8MgdnBBC0rCRPuuAerPjBkzEPiOkuR3g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://musicgame.natcom.com.ht/song-quiz-service/api/inventory",
+							"protocol": "https",
+							"host": [
+								"musicgame",
+								"natcom",
+								"com",
+								"ht"
+							],
+							"path": [
+								"song-quiz-service",
+								"api",
+								"inventory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login server thật",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "song-quiz-web",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "50942422121",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "w38nqdTBPMIYekMrI7r43i0JQalDm6o9",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://apimusicgame.natcom.com.ht/realms/SONG_QUIZ_APP/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"apimusicgame",
+								"natcom",
+								"com",
+								"ht"
+							],
+							"path": [
+								"realms",
+								"SONG_QUIZ_APP",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
