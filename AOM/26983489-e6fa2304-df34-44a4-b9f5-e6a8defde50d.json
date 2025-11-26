@@ -746,6 +746,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJYUw5dFIxeVk0Tlg0OE40a0E5WWVfNFFaY0EwRl8xYW1tT2RBT1hXWWdFIn0.eyJleHAiOjI2MjgwNTgwMDcsImlhdCI6MTc2NDE0NDQwNywianRpIjoiMzU2MTAwNjgtMGJiMS00N2UzLTg3MmYtNDJhZjAxYmUwMDQ5IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50LmJhb3RyaXNkLnZuOjg0NDMvcmVhbG1zL0FPTSIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9tLWNtcyIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiM2QwNDA5ZTQtZTRkMi00NWE1LWI5ODQtZTViNzlkMmJiZmRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYW9tLWFwcCIsInNpZCI6ImNlMWEyYzgzLTk4YWItNDkwMS05NWUxLWFjZDMyM2NjYjNkYSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9iYW90cmlzZC52bjo4NDQzIiwiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1hb20iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYW9tLWNtcyI6eyJyb2xlcyI6WyJ1bWFfcHJvdGVjdGlvbiJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJkZWxldGUtYWNjb3VudCIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20iLCJsb2NhbGUiOiJ2aS1WTiIsImdpdmVuX25hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9.N2riGPobpD9RGBXK7bBITHnBCHSXNo8f0GwDeuf3bhETZE97punrmYUoRRw-bbI8xiPubmVlBSGjmxWahrIgZp_5plEodFFBjR3j3J9SG8idG-7JKBYnYgGyzENjLl3B57SImqEjmJArBqDyrkKZ6ZxW_uHBTLAQ2ebFW-ZaW2zzi_JccFxRmVgBjydsUy9iIIBWXhZEK5B43iDQGThFIeoayifAmgyer5abchWf1VeDdBK746GY32FaD-JLF2TiyRWzfbBV3gETn4oT6vrDw8e5bDT42NrhBuci3J62DOudTptpOfqZ8TtJF7iYuviJYtSZ5b_eWYKIjr5w8fZP3g",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -758,7 +768,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task/26090/detail",
+							"raw": "https://baotrisd.vn:8443/task-manager-service/api/task/177444/detail",
 							"protocol": "https",
 							"host": [
 								"baotrisd",
@@ -769,7 +779,7 @@
 								"task-manager-service",
 								"api",
 								"task",
-								"26090",
+								"177444",
 								"detail"
 							]
 						}
