@@ -1138,10 +1138,20 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJYUw5dFIxeVk0Tlg0OE40a0E5WWVfNFFaY0EwRl8xYW1tT2RBT1hXWWdFIn0.eyJleHAiOjI2MjgwNDEwMDQsImlhdCI6MTc2NDEyNzQwNCwianRpIjoiMGVjYTliMjEtMWVhNC00ZWFkLTkzNTEtYmM0YWMyMzRlNDg0IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50LmJhb3RyaXNkLnZuOjg0NDMvcmVhbG1zL0FPTSIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9tLWNtcyIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiM2QwNDA5ZTQtZTRkMi00NWE1LWI5ODQtZTViNzlkMmJiZmRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYW9tLWFwcCIsInNpZCI6ImJmYzBlYzAwLWE2ODAtNDg2Yi04ZWE1LTQyYmNhMzUzYzZjNiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9iYW90cmlzZC52bjo4NDQzIiwiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1hb20iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYW9tLWNtcyI6eyJyb2xlcyI6WyJ1bWFfcHJvdGVjdGlvbiJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJkZWxldGUtYWNjb3VudCIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20iLCJsb2NhbGUiOiJ2aS1WTiIsImdpdmVuX25hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9.Bk3Sa2mjSoAQDCoHA2XY9J5GxL6LtMmyeH6u7vUDxKEcZThs8z-5vxy8mLTswfavGRWW5tjVCuVFiSLBq1DaYCNQrpR9CMfCcbIFMmW0DTjjmjLJM81E4nkUkBsl-g7CTl5gAvvHVdPUodzAnIOGCgn0nT2MFTpMO9b0YYmITZhDuh8IwgH8Rp8o41r0mt9pR0XzPN9lOoh5RKgBsiNcoV3rO7OO2AyK7lrVylT4M6d6gJEGooAabIYSwgKFVwVCT0NNeLET0ojCGW175hm-eohxYjELDex5mnrRqP5QdjD2N4iaRH_rHfdv6jo73OM2jq6GX2I27OqFTV79Pv7-NQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://baotrisd.vn:8443/device-service/api/device/1583/detail",
+							"raw": "https://baotrisd.vn:8443/device-service/api/device/809/detail",
 							"protocol": "https",
 							"host": [
 								"baotrisd",
@@ -1152,7 +1162,7 @@
 								"device-service",
 								"api",
 								"device",
-								"1583",
+								"809",
 								"detail"
 							]
 						}
