@@ -1393,7 +1393,7 @@
 					"response": []
 				},
 				{
-					"name": "236: lấy danh sách file của thiết bị Copy",
+					"name": "tìm kiếm thiết bị",
 					"id": "26983489-20ffb346-7fe8-4d46-9f25-66adc6818ff4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
