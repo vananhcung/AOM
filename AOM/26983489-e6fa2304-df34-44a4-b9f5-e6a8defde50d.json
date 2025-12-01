@@ -3150,7 +3150,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"typeCode\": \"INCIDENT_EVALUATION\",\r\n  \"parentId\": 26181,\r\n  \"name\": \"Rơ le nhiệt độ biến tần báo lỗi\",\r\n  \"status\": \"DONE\",\r\n  \"refId\": null,\r\n  \"refCode\": null,\r\n  \"refName\": null,\r\n  \"refStatus\": null,\r\n  \"startTime\": null,\r\n  \"description\": \"kiểm tra điện trở dây, đo thông mạch, kiểm tra tiếp xúc chân rơ le, đế rơ le\",\r\n  \"note\": \"hẹ hẹ hẹ\",\r\n  \"executorId\": \"068a47ed-165e-4d6a-9ab5-88ed0833ca93\",\r\n  \"signUrl\": \"https://\"\r\n}",
+							"raw": "{\r\n  \"typeCode\": \"INCIDENT_EVALUATION\",\r\n  \"parentId\": 26181,\r\n  \"name\": \"Rơ le nhiệt độ biến tần báo lỗi\",\r\n  \"status\": \"TO_DO\",\r\n  \"refId\": null,\r\n  \"refCode\": null,\r\n  \"refName\": null,\r\n  \"refStatus\": null,\r\n  \"startTime\": 1764151484,\r\n  \"description\": \"kiểm tra điện trở dây, đo thông mạch, kiểm tra tiếp xúc chân rơ le, đế rơ le\",\r\n  \"note\": \"hẹ hẹ hẹ\",\r\n  \"executorId\": \"068a47ed-165e-4d6a-9ab5-88ed0833ca93\",\r\n  \"signUrl\": \"https://\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
