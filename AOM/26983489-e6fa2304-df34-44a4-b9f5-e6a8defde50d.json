@@ -1412,7 +1412,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://baotrisd.vn:8443/device-service/api/device/search?keyword=S-2010F&offset=0&limit=10",
+							"raw": "https://baotrisd.vn:8443/device-service/api/device/search?keyword=S-2010F&location-id=104&offset=0&limit=10",
 							"protocol": "https",
 							"host": [
 								"baotrisd",
@@ -1432,9 +1432,8 @@
 								},
 								{
 									"key": "location-id",
-									"value": null,
-									"type": "text",
-									"disabled": true
+									"value": "104",
+									"type": "text"
 								},
 								{
 									"key": "offset",
