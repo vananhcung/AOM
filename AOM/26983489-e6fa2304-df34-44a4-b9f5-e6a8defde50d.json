@@ -14,13 +14,13 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "63422101-86b9-490b-9e35-894d18a42db5",
 								"exec": [
 									"pm.environment.set(\"accessTokenKeyCloak\", pm.response.json().access_token)"
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"requests": {},
-								"id": "63422101-86b9-490b-9e35-894d18a42db5"
+								"requests": {}
 							}
 						}
 					],
