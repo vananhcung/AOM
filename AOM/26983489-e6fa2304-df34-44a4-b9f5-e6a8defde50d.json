@@ -1448,6 +1448,63 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "tìm kiếm thiết bị",
+					"id": "26983489-e5aff942-e5b7-492c-8ce0-e73d328e9c5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJYUw5dFIxeVk0Tlg0OE40a0E5WWVfNFFaY0EwRl8xYW1tT2RBT1hXWWdFIn0.eyJleHAiOjI2Mjg0ODk3MzgsImlhdCI6MTc2NDU3NjEzOCwianRpIjoiNDY1NWZjZDgtMGNhZi00NWFiLWI2MDAtOTNmOWUxOWU5MmFiIiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50LmJhb3RyaXNkLnZuOjg0NDMvcmVhbG1zL0FPTSIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9tLWNtcyIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiM2QwNDA5ZTQtZTRkMi00NWE1LWI5ODQtZTViNzlkMmJiZmRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYW9tLWFwcCIsInNpZCI6IjNiMzJiNjE5LTdkODItNDA3ZS05OTlkLTJmYjFkMjg5ZmU5ZCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9iYW90cmlzZC52bjo4NDQzIiwiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1hb20iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYW9tLWNtcyI6eyJyb2xlcyI6WyJ1bWFfcHJvdGVjdGlvbiJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJkZWxldGUtYWNjb3VudCIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20iLCJsb2NhbGUiOiJ2aS1WTiIsImdpdmVuX25hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9.ZOeWp-mrWwnp4-SASgV0ByFJurpJhpZu8451Dw-DndppHGyX19NLpau_O7aDcvBfHDwWQqTASgWmMQPo-EN1BA2bZk2v54BdYgTU2AblIpsb15N4ZLa5GkqIT5s9XCR135DVTJLtGfZ-C7rcuEBSBLS5kMBWCcr83u3hHKYlE9eL05qU9XESO9jDdE8bWkPfqfby9ZMGgJ8YrABp6nB2ZN6g5sa--3hSjk8px-ED-FHeDSnoJVLrGEYJeK6qLLQl1c5iKXBwYSBN4mYncl-09h7EWAdRbcRY14QeIoIAmSjQR1TmVztsM967bpnzeKnRJqYWnUnyKRlYjD54N_FrXA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://baotrisd.vn:8443/device-service/api/device/search?keyword=S-2010F&offset=0&limit=10",
+							"protocol": "https",
+							"host": [
+								"baotrisd",
+								"vn"
+							],
+							"port": "8443",
+							"path": [
+								"device-service",
+								"api",
+								"device",
+								"search"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "S-2010F"
+								},
+								{
+									"key": "location-id",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "26983489-dba9aa2b-e9f3-4c2c-bc82-ee3a6cdf4baf"
