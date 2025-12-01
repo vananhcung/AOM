@@ -3167,13 +3167,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://baotrisd.vn:8443/device-service/api/device/search?keyword=S-2010F&offset=0&limit=10",
+							"raw": "https://demo.ezgo.vn:8284/device-service/api/device/search?keyword=S-2010F&offset=0&limit=10",
 							"protocol": "https",
 							"host": [
-								"baotrisd",
+								"demo",
+								"ezgo",
 								"vn"
 							],
-							"port": "8443",
+							"port": "8284",
 							"path": [
 								"device-service",
 								"api",
