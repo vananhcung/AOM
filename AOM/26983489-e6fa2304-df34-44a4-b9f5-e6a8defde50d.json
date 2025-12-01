@@ -1404,7 +1404,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2MTExOTU3OTcsImlhdCI6MTc0NzI4MjE5NywianRpIjoiZGIzMjg3OGEtZGUyMC00M2Q2LThhNmYtNTViNjk5YjBhMTBiIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6ImFhODI0NDU4LWE4NjEtNDczMy1hMzY0LTRkOThmZDJmMzNkMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFvbS1hcHAiLCJzaWQiOiIzMjQxYjAxNy1kZTg2LTRmZmItYmNhOC01ZTE1Y2JkNjMwMTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vd3d3LmtleWNsb2FrLm9yZy8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtYW9tIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwidmlldy1yZWFsbSIsIm1hbmFnZS1pZGVudGl0eS1wcm92aWRlcnMiLCJpbXBlcnNvbmF0aW9uIiwicmVhbG0tYWRtaW4iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwiZGVsZXRlLWFjY291bnQiLCJtYW5hZ2UtY29uc2VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkN1bmcgQW5oIFTDuiBo4buNaG8gVMO6IiwicHJlZmVycmVkX3VzZXJuYW1lIjoiY3VuZ2FuaHR1QGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJDdW5nIEFuaCBUw7ogaOG7jWhvIiwiZmFtaWx5X25hbWUiOiJUw7oiLCJlbWFpbCI6ImN1bmdhbmh0dUBnbWFpbC5jb20ifQ.m9TaVquNc0BXlXqRtABZh_bgLOteGsRcjkhUiqF0j0NuxrbnNAqfLMKT_cP1zKsRvtl34ZRradqy4ryfMkFClxaCgwBuvYQCBYf_BhmfMV7h945oJ9yo11AgdSR3HuCoj642zNUrPq8JKs0_Bh5qLAP2ppT9YMNq81GHq7ZYj1yYFt2rqKcK9t3JZH40hUk5cWa4w9ppwT_RQ1v5UOt6ZZKShUS0YAEqbMhhDF_GxOjbbURXCaQwOdhWtK0FGmuI4Rw8DcFw-Q1aee2x-3K7JWLfl31tjan_RpR-Jj_JapOFBI02W3yP9vFxVHrooIcL0AmCc0Q29p9bBVtek5bI-A",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJYUw5dFIxeVk0Tlg0OE40a0E5WWVfNFFaY0EwRl8xYW1tT2RBT1hXWWdFIn0.eyJleHAiOjI2Mjg0ODk3MzgsImlhdCI6MTc2NDU3NjEzOCwianRpIjoiNDY1NWZjZDgtMGNhZi00NWFiLWI2MDAtOTNmOWUxOWU5MmFiIiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50LmJhb3RyaXNkLnZuOjg0NDMvcmVhbG1zL0FPTSIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9tLWNtcyIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiM2QwNDA5ZTQtZTRkMi00NWE1LWI5ODQtZTViNzlkMmJiZmRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYW9tLWFwcCIsInNpZCI6IjNiMzJiNjE5LTdkODItNDA3ZS05OTlkLTJmYjFkMjg5ZmU5ZCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9iYW90cmlzZC52bjo4NDQzIiwiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1hb20iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYW9tLWNtcyI6eyJyb2xlcyI6WyJ1bWFfcHJvdGVjdGlvbiJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJkZWxldGUtYWNjb3VudCIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20iLCJsb2NhbGUiOiJ2aS1WTiIsImdpdmVuX25hbWUiOiJLaMO0bmcgxJHGsOG7o2MgdGhhbyB0w6FjIHbDoG8gdMOgaSBraG_huqNuIG7DoHkiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9.ZOeWp-mrWwnp4-SASgV0ByFJurpJhpZu8451Dw-DndppHGyX19NLpau_O7aDcvBfHDwWQqTASgWmMQPo-EN1BA2bZk2v54BdYgTU2AblIpsb15N4ZLa5GkqIT5s9XCR135DVTJLtGfZ-C7rcuEBSBLS5kMBWCcr83u3hHKYlE9eL05qU9XESO9jDdE8bWkPfqfby9ZMGgJ8YrABp6nB2ZN6g5sa--3hSjk8px-ED-FHeDSnoJVLrGEYJeK6qLLQl1c5iKXBwYSBN4mYncl-09h7EWAdRbcRY14QeIoIAmSjQR1TmVztsM967bpnzeKnRJqYWnUnyKRlYjD54N_FrXA",
 									"type": "string"
 								}
 							]
@@ -1412,7 +1412,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://baotrisd.vn:8443/file-manager-service/api/file/object-files?ref-id=238&ref-type=PRODUCT&limit=10&offset=0",
+							"raw": "https://baotrisd.vn:8443/device-service/api/device/search?keyword=S-2010F&offset=0&limit=10",
 							"protocol": "https",
 							"host": [
 								"baotrisd",
@@ -1420,28 +1420,29 @@
 							],
 							"port": "8443",
 							"path": [
-								"file-manager-service",
+								"device-service",
 								"api",
-								"file",
-								"object-files"
+								"device",
+								"search"
 							],
 							"query": [
 								{
-									"key": "ref-id",
-									"value": "238"
+									"key": "keyword",
+									"value": "S-2010F"
 								},
 								{
-									"key": "ref-type",
-									"value": "PRODUCT",
-									"description": "product"
-								},
-								{
-									"key": "limit",
-									"value": "10"
+									"key": "location-id",
+									"value": null,
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "offset",
 									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
 								}
 							]
 						}
