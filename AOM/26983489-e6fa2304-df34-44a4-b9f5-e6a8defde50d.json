@@ -350,6 +350,38 @@
 				},
 				{
 					"name": "79- Tạo task để bắt đầu ghi sổ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a0970b68-239b-4fe9-9ccf-3367d32d0875",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"//1.kiểm tra json trả ra là 1 object\r",
+									"pm.test(\" kiểm tra json trả ra là 1 object\", function(){\r",
+									"    pm.expect(jsonData).to.be.an(\"object\")\r",
+									"});\r",
+									"//2. kiểm tra status code\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//3. kiểm tra các thuộc tính\r",
+									"pm.test(\"kiểm tra các trường vó trong object\",function(){\r",
+									"    pm.expect(jsonData).to.have.property(\"code\").that.is.a(\"number\");\r",
+									"    pm.expect(jsonData.message).to.be.null;\r",
+									"    pm.expect(jsonData).to.have.property(\"data\").that.is.a(\"string\");\r",
+									"})\r",
+									"//4: Kiểm tra giá trị cụ thể của code\r",
+									"pm.test(\"kiểm tra giá trị cụ thể của code\",function(){\r",
+									"    pm.expect(jsonData.code).to.equal(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-a0608084-e7fe-40b1-a2fb-0d80f39f3f84",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
