@@ -2745,6 +2745,38 @@
 				},
 				{
 					"name": "83 - Ghi sổ 1 nhóm thiết bị",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "74e96a00-e960-49de-acb6-d30e53d43213",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"//1.kiểm tra json trả ra là 1 object\r",
+									"pm.test(\" kiểm tra json trả ra là 1 object\", function(){\r",
+									"    pm.expect(jsonData).to.be.an(\"object\")\r",
+									"});\r",
+									"//2. kiểm tra status code\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//3. kiểm tra các thuộc tính\r",
+									"pm.test(\"kiểm tra các trường vó trong object\",function(){\r",
+									"    pm.expect(jsonData).to.have.property(\"code\").that.is.a(\"number\");\r",
+									"    pm.expect(jsonData.message).to.be.null;\r",
+									"    pm.expect(jsonData).to.have.property(\"data\").that.is.a(\"string\");\r",
+									"})\r",
+									"//4: Kiểm tra giá trị cụ thể của code:\r",
+									"pm.test(\"kiểm tra giá trị cụ thể của code\",function(){\r",
+									"    pm.expect(jsonData.code).to.equal(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-972a58f9-8a64-4b66-9946-fecd07be3d2b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
