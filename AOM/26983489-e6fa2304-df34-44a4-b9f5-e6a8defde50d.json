@@ -2487,7 +2487,16 @@
 									"    pm.expect(jsonData.type).to.have.property(\"name\").that.is.a(\"string\");\r",
 									"});\r",
 									"//6\r",
-									""
+									"pm.test(\"Template cha có các trường cần thiết\", function () {\r",
+									"    pm.expect(jsonData).to.have.property(\"id\").that.is.a(\"number\");\r",
+									"    pm.expect(jsonData).to.have.property(\"name\").that.is.a(\"string\");\r",
+									"    pm.expect(jsonData).to.have.property(\"description\");\r",
+									"    pm.expect(jsonData).to.have.property(\"type\").that.is.an(\"object\");\r",
+									"    pm.expect(jsonData.type).to.have.property(\"id\").that.is.a(\"number\");\r",
+									"    pm.expect(jsonData.type).to.have.property(\"code\").that.is.a(\"string\");\r",
+									"    pm.expect(jsonData.type).to.have.property(\"name\").that.is.a(\"string\");\r",
+									"    pm.expect(jsonData).to.have.property(\"child\").that.is.an(\"array\");\r",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {},
