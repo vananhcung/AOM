@@ -2649,6 +2649,37 @@
 				},
 				{
 					"name": "98 - Hoàn thành ghi sổ ca làm việc",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f0cf15c5-c002-48c6-90c9-a27513724dce",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"Status code is 412\", function () {\r",
+									"    pm.response.to.have.status(412);\r",
+									"});\r",
+									"//2\r",
+									"pm.test(\"kiểm tra json trả ra là 1 object\", function(){\r",
+									"    pm.expect(jsonData).to.be.an(\"object\");\r",
+									"});\r",
+									"//3\r",
+									"pm.test(\"kiểm tra các thuộc tính và kiểu dữ liệu\", function(){\r",
+									"    pm.expect(jsonData.code).to.be.a(\"number\");\r",
+									"    pm.expect(jsonData.message).to.be.a(\"string\");\r",
+									"});\r",
+									"//4\r",
+									"pm.test(\"Kiểm tra các trường tồn tại\", function () {\r",
+									"    pm.expect(jsonData).to.have.property(\"code\");\r",
+									"    pm.expect(jsonData).to.have.property(\"message\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-9f7410df-9c98-4d6d-a092-f385d9233cbe",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
