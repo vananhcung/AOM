@@ -51,7 +51,7 @@
 								},
 								{
 									"key": "username",
-									"value": "duongquanghoat93@gmail.com",
+									"value": "huydq@sdwtp.vn",
 									"type": "text"
 								},
 								{
@@ -2339,7 +2339,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/by-template?template-id=221",
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/by-template?template-id=1881",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -2356,7 +2356,7 @@
 							"query": [
 								{
 									"key": "template-id",
-									"value": "221"
+									"value": "1881"
 								}
 							]
 						}
@@ -2425,7 +2425,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/template?offset=0&limit=10&type-code=LOGBOOK_SCADA",
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/template?offset=0&limit=10&type-code=LOGBOOK_ME",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -2449,7 +2449,7 @@
 								},
 								{
 									"key": "type-code",
-									"value": "LOGBOOK_SCADA"
+									"value": "LOGBOOK_ME"
 								}
 							]
 						}
