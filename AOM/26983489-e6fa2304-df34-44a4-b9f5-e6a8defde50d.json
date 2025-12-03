@@ -2458,6 +2458,43 @@
 				},
 				{
 					"name": "81 - Lấy chi tiết ghi sổ đang thực hiện",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c3c69b93-358b-4287-afaa-4d6fa508e110",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"kiểm tra json trả ra là 1 object\",function(){\r",
+									"    pm.expect(jsonData).to.be.an(\"object\");\r",
+									"});\r",
+									"//2\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//3\r",
+									"pm.test(\"Kiểm tra type là object\",function(){\r",
+									"    pm.expect(jsonData.type).to.be.a(\"object\");\r",
+									"});\r",
+									"//4\r",
+									"pm.test(\"kiểm tra child là 1 mảng\",function(){\r",
+									"    pm.expect(jsonData.child).to.be.an(\"array\");\r",
+									"});\r",
+									"//5\r",
+									"pm.test(\"kiểm tra các thuộc tính và kiểu dữ liệu của type\",function(){\r",
+									"    pm.expect(jsonData.type).to.have.property(\"code\").that.is.a(\"string\");\r",
+									"    pm.expect(jsonData.type).to.have.property(\"id\").that.is.a(\"number\");\r",
+									"    pm.expect(jsonData.type).to.have.property(\"name\").that.is.a(\"string\");\r",
+									"});\r",
+									"//6\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-23d17dd3-120f-4697-a701-725a325e6bdf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2485,7 +2522,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/26321",
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task/28621",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -2497,7 +2534,7 @@
 								"task-manager-service",
 								"api",
 								"task",
-								"26321"
+								"28621"
 							]
 						}
 					},
