@@ -2974,6 +2974,38 @@
 				},
 				{
 					"name": "102 - scan   QR code",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8ad03957-616f-486d-901c-efb9444c9354",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"//1.kiểm tra json trả ra là 1 object\r",
+									"pm.test(\" kiểm tra json trả ra là 1 object\", function(){\r",
+									"    pm.expect(jsonData).to.be.an(\"object\")\r",
+									"});\r",
+									"//2. kiểm tra status code\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//3. kiểm tra các thuộc tính\r",
+									"pm.test(\"kiểm tra các trường có trong object\",function(){\r",
+									"    pm.expect(jsonData).to.have.property(\"code\").that.is.a(\"number\");\r",
+									"    pm.expect(jsonData.message).to.be.null;\r",
+									"    pm.expect(jsonData).to.have.property(\"data\").that.is.a(\"string\");\r",
+									"})\r",
+									"//4: Kiểm tra giá trị cụ thể của code:\r",
+									"pm.test(\"kiểm tra giá trị cụ thể của code\",function(){\r",
+									"    pm.expect(jsonData.code).to.equal(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-f4de884a-30ba-4521-bb9c-780649da6340",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
