@@ -3431,6 +3431,40 @@
 				},
 				{
 					"name": "danh sách thông số thiết bị",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "addf37c4-f091-43ed-b186-96d4e559385e",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"kiểm tra json trả ra là 1 mảng\", function(){\r",
+									"    pm.expect(jsonData).to.be.an('array');\r",
+									"});\r",
+									"//2\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//3\r",
+									"pm.test(\"kiểm tra các thuộc tính và kiểu dữ liệu\", function(){\r",
+									"    pm.expect(jsonData[0].id).to.be.a('number');\r",
+									"    pm.expect(jsonData[0].type).to.be.a('string');\r",
+									"    pm.expect(jsonData[0].name).to.be.a('string');\r",
+									"    pm.expect(jsonData[0].attrValue).to.be.a('string');\r",
+									"});\r",
+									"//4\r",
+									"pm.test(\"kiểm tra từng phần tử là 1 mảng\", function(){\r",
+									"    jsonData.forEach(item =>{\r",
+									"        pm.expect(item).to.be.an('object');\r",
+									"    });\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-0a6dceb4-4bcb-44ca-95ef-b359bddd2856",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3448,7 +3482,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=100&offset=0&product-id=234",
+							"raw": "https://demo.ezgo.vn:8284/product-service/api/product-specification/search?limit=10&offset=0&product-id=234",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -3465,7 +3499,7 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "100"
+									"value": "10"
 								},
 								{
 									"key": "offset",
