@@ -3046,6 +3046,38 @@
 				},
 				{
 					"name": "94: Xóa file ảnh đã upload",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aef3eb98-c217-4f2c-86d4-d4dd4411313c",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"//1.kiểm tra json trả ra là 1 object\r",
+									"pm.test(\" kiểm tra json trả ra là 1 object\", function(){\r",
+									"    pm.expect(jsonData).to.be.an(\"object\")\r",
+									"});\r",
+									"//2. kiểm tra status code\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//3. kiểm tra các thuộc tính\r",
+									"pm.test(\"kiểm tra các trường có trong object\",function(){\r",
+									"    pm.expect(jsonData).to.have.property(\"code\").that.is.a(\"number\");\r",
+									"    pm.expect(jsonData).to.have.property(\"message\").that.is.a(\"string\");\r",
+									"    pm.expect(jsonData.data).to.be.null;\r",
+									"})\r",
+									"//4: Kiểm tra giá trị cụ thể của code:\r",
+									"pm.test(\"kiểm tra giá trị cụ thể của code\",function(){\r",
+									"    pm.expect(jsonData.code).to.equal(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-9523fd54-c467-429f-8902-5861bde79335",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
