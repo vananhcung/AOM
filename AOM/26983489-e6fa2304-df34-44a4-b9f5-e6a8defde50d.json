@@ -3359,6 +3359,41 @@
 			"item": [
 				{
 					"name": "149 - Lấy danh sách thiết bị",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3d5cb3c0-79db-4b4f-b05a-ec8aededd702",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"kiểm tra json trả ra là 1 mảng\", function(){\r",
+									"    pm.expect(jsonData).to.be.an(\"array\");\r",
+									"});\r",
+									"//2\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//3\r",
+									"pm.test(\"kiểm tra từng mảng là 1 object\",function(){\r",
+									"    jsonData.forEach(item => {\r",
+									"        pm.expect(item).to.be.an(\"object\");\r",
+									"        pm.expect(item).to.have.property(\"id\").that.is.a(\"number\");\r",
+									"        pm.expect(item).to.have.property(\"thumbnail\");\r",
+									"        pm.expect(item).to.have.property(\"name\").that.is.a(\"string\");\r",
+									"        pm.expect(item).to.have.property(\"code\").that.is.a(\"string\");\r",
+									"        pm.expect(item).to.have.property(\"status\").that.is.a(\"string\");\r",
+									"        pm.expect(item).to.have.property(\"state\").that.is.a(\"string\");\r",
+									"\r",
+									"    })\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-fd9fe3a0-7648-4ab3-8628-83a33496d94b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3366,15 +3401,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "https://demo.ezgo.vn:8284/device-service/api/device?offset=0&limit=10",
 							"protocol": "https",
