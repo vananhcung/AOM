@@ -2311,7 +2311,7 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"//3. kiểm tra các thuộc tính\r",
-									"pm.test(\"kiểm tra các trường vó trong object\",function(){\r",
+									"pm.test(\"kiểm tra các trường có trong object\",function(){\r",
 									"    pm.expect(jsonData).to.have.property(\"code\").that.is.a(\"number\");\r",
 									"    pm.expect(jsonData.message).to.be.null;\r",
 									"    pm.expect(jsonData).to.have.property(\"data\").that.is.a(\"string\");\r",
