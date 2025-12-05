@@ -3363,7 +3363,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3d5cb3c0-79db-4b4f-b05a-ec8aededd702",
+								"id": "21ca933d-df13-420a-b7d6-30a5d4e1da95",
 								"exec": [
 									"let jsonData = pm.response.json();\r",
 									"pm.test(\"kiểm tra json trả ra là 1 mảng\", function(){\r",
