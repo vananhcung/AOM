@@ -3790,6 +3790,88 @@
 				},
 				{
 					"name": "lấy danh sách vị trí cha",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "04044bd6-266a-49a8-b643-9dd1e5d264ea",
+								"exec": [
+									"let jsonData = [\r",
+									"    {\r",
+									"        \"id\": 103,\r",
+									"        \"name\": \"Trạm bơm nước sạch và khu xử lý bùn\",\r",
+									"        \"thumbnail\": \"https://demo.ezgo.vn:8284/storage/202512/Tram_bom_nuoc_sach_va_khu_xu_ly_bun__1765424747746.jpg\"\r",
+									"    },\r",
+									"    {\r",
+									"        \"id\": 122,\r",
+									"        \"name\": \"Khu phụ trợ\",\r",
+									"        \"thumbnail\": \"https://demo.ezgo.vn:8284/storage/202510/Khu_phu_tro__1761567584015.jpg\"\r",
+									"    }\r",
+									"];\r",
+									"\r",
+									"// TEST: response phải là mảng\r",
+									"if (!Object.isobject(jsonData)) {\r",
+									"    throw new Error(\"❌ Pre-request FAIL: Response không phải mảng\");\r",
+									"}\r",
+									"\r",
+									"// TEST: mảng không được rỗng\r",
+									"if (jsonData.length === 0) {\r",
+									"    throw new Error(\"❌ Pre-request FAIL: Danh sách rỗng\");\r",
+									"}\r",
+									"jsonData.forEach((item, index) => {\r",
+									"\r",
+									"    if (typeof item.id !== \"number\") {\r",
+									"        throw new Error(`❌ Pre-request FAIL: id sai kiểu tại index ${index}`);\r",
+									"    }\r",
+									"\r",
+									"    if (!item.name || item.name.trim() === \"\") {\r",
+									"        throw new Error(`❌ Pre-request FAIL: name rỗng tại index ${index}`);\r",
+									"    }\r",
+									"\r",
+									"    if (!item.thumbnail) {\r",
+									"        throw new Error(`❌ Pre-request FAIL: thiếu thumbnail tại index ${index}`);\r",
+									"    }\r",
+									"\r",
+									"});\r",
+									"jsonData.forEach((item, index) => {\r",
+									"    if (item.name.length < 5) {\r",
+									"        throw new Error(`❌ Pre-request FAIL: name quá ngắn tại index ${index}`);\r",
+									"    }\r",
+									"});\r",
+									"let hasStation = jsonData.some(item => item.name.includes(\"Trạm bơm\"));\r",
+									"\r",
+									"if (!hasStation) {\r",
+									"    throw new Error(\"❌ Pre-request FAIL: Không có trạm bơm nào\");\r",
+									"}\r",
+									"let selected = jsonData[0];\r",
+									"\r",
+									"if (!selected.id) {\r",
+									"    throw new Error(\"❌ Pre-request FAIL: Không lấy được stationId\");\r",
+									"}\r",
+									"\r",
+									"pm.environment.set(\"stationId\", selected.id);\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "2d6c1a9f-0ba5-4222-bcb2-786e268adc88",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "26983489-f087c9cd-3c8d-453c-ad39-43b010fe2e73",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
