@@ -349,6 +349,171 @@
 					"response": []
 				},
 				{
+					"name": "74- lấy danh sách tất cả ca ghi sổ Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "32b5a638-61fa-4879-b7cd-f5e2ad2a6cb0",
+								"exec": [
+									"let jsonData = pm.response.json();\r",
+									"//1. Kiểm tra json là mảng\r",
+									"pm.test(\"kiểm tra json là mảng\", function () {\r",
+									"    pm.expect(jsonData).to.be.an(\"array\");\r",
+									"});\r",
+									"//2. Kiểm tra trạng thái có đúng 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//3. kiểm tra id đầu tiên\r",
+									"pm.test(\"kiểm tra id của cv đầu tiên là 28521\", function () {\r",
+									"    pm.expect(jsonData[0].id).to.eql(28521);\r",
+									"});\r",
+									"//4. kiểm tra tên cv đầu tiên\r",
+									"pm.test(\"kiểm tra name của cv đầu tiên là Mẫu Ghi sổ ME trạm bơm Lamella 2 15h\", function () {\r",
+									"    pm.expect(jsonData[0].name).to.eql(\"Mẫu Ghi sổ ME trạm bơm Lamella 2 15h\");\r",
+									"});\r",
+									"//5. Kiểm tra mỗi task cso các trường:\r",
+									"pm.test(\"Mỗi task có đầy đủ các trường chính\", function () {\r",
+									"    const data = pm.response.json();\r",
+									"    // Kiểm tra phản hồi phải là mảng\r",
+									"    pm.expect(data).to.be.an(\"array\");\r",
+									"    data.forEach(item => {\r",
+									"        // --- Trường kiểu bắt buộc ---\r",
+									"        pm.expect(item).to.have.property('id').that.is.a(\"number\");\r",
+									"        pm.expect(item).to.have.property('name').that.is.a(\"string\");\r",
+									"         // --- taskType phải là object ---\r",
+									"        pm.expect(item).to.have.property('taskType').that.is.a(\"object\");\r",
+									"        pm.expect(item).to.have.property('status').that.is.a(\"string\");\r",
+									"        pm.expect(item).to.have.property('startTime');\r",
+									"        pm.expect(item).to.have.property('endTime');\r",
+									"        // --- executor phải là object ---\r",
+									"       pm.expect(item).to.have.property('executor');\r",
+									"        if (item.executor !== null) {\r",
+									"            pm.expect(item.executor).to.be.an(\"object\");\r",
+									"        } else {\r",
+									"            pm.expect(item.executor).to.be.null;\r",
+									"        }\r",
+									"        // --- startTime / endTime / plannedDate / dueDate có thể là null hoặc number ---\r",
+									"        [\"startTime\", \"endTime\", \"plannedDate\", \"dueDate\"].forEach(field => {\r",
+									"            if (item[field] !== null) {\r",
+									"                pm.expect(item[field]).to.be.a(\"number\");\r",
+									"            } else {\r",
+									"                pm.expect(item[field]).to.be.null;\r",
+									"            }\r",
+									"        });\r",
+									"    });\r",
+									"});\r",
+									"//6. Kiểm tra tasktype \r",
+									"pm.test(\"taskType phải là object hợp lệ\", function () {\r",
+									"    const data = pm.response.json();\r",
+									"\r",
+									"    data.forEach(item => {\r",
+									"        pm.expect(item.taskType).to.be.an('object');\r",
+									"        pm.expect(item.taskType).to.have.property('id').that.is.a(\"number\");\r",
+									"        pm.expect(item.taskType).to.have.property('name').that.is.a(\"string\");\r",
+									"        pm.expect(item.taskType).to.have.property('code').that.is.a(\"string\");\r",
+									"        pm.expect(item.taskType).to.have.property('creatorId').that.is.a(\"string\");\r",
+									"    });\r",
+									"});\r",
+									"//7. Kiểm tra excutor\r",
+									"pm.test(\"executor phải là object hợp lệ\", function () {\r",
+									"    const data = pm.response.json();\r",
+									"\r",
+									"    data.forEach(item => {\r",
+									"        pm.expect(item).to.have.property('executor');\r",
+									"        if (item.executor === null) {\r",
+									"            pm.expect(item.executor).to.be.null;\r",
+									"        } else {\r",
+									"            pm.expect(item.executor).to.be.an(\"object\");\r",
+									"            pm.expect(item.executor).to.have.property('id').that.is.a(\"string\");\r",
+									"            pm.expect(item.executor).to.have.property('username').that.is.a(\"string\");\r",
+									"            pm.expect(item.executor).to.have.property('fullName').that.is.a(\"string\");\r",
+									"            pm.expect(item.executor).to.have.property('dateModified').that.is.a(\"number\");\r",
+									"            pm.expect(item.executor).to.have.property('dateCreated').that.is.a(\"number\");\r",
+									"        }\r",
+									"    });\r",
+									"});\r",
+									"//8. Kiểm tra mỗi phần tử của mảng là object\r",
+									"pm.test(\"kiểm tra từng mảng là 1 object\", function () {\r",
+									"    jsonData.forEach(item => pm.expect(item).to.be.an(\"object\"));\r",
+									"});\r",
+									"//9: kiểm tra trạng thái:\r",
+									"pm.test(\"status phải hợp lệ\", function () {\r",
+									"    const validStatus = [\"DONE\", \"TO_DO\", \"IN_PROGRESS\"];\r",
+									"\r",
+									"    jsonData.forEach(item => {\r",
+									"        pm.expect(validStatus).to.include(item.status);\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"id": "26983489-56bea6b1-f9ce-4763-8c02-4d81a9950079",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJEU3J1TkpZTzRQTkZuMHlkREloMzFzNEVDREpsWFlVYjc4SHJ2OXJrZUJvIn0.eyJleHAiOjI2Mjc2MDgwMzYsImlhdCI6MTc2MzY5NDQzNiwianRpIjoiYzRlMzA3MzEtYzI0Yi00ZThkLWE3MzQtYzQ1NGI2YWIxOWEyIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLmV6Z28udm46ODAyNS9yZWFsbXMvQU9NIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhb20tY21zIiwiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwNjhhNDdlZC0xNjVlLTRkNmEtOWFiNS04OGVkMDgzM2NhOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhb20tYXBwIiwic2lkIjoiMGFmMDAxMjctNWU5Mi00MWMyLWE0NDMtODkzYzFjYzE5ZWQ2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWFvbSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb20tY21zIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJicm9rZXIiOnsicm9sZXMiOlsicmVhZC10b2tlbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInZpZXctYXBwbGljYXRpb25zIiwidmlldy1jb25zZW50Iiwidmlldy1ncm91cHMiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsImRlbGV0ZS1hY2NvdW50IiwibWFuYWdlLWNvbnNlbnQiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZSBoZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJIZSBoZSIsImxvY2FsZSI6InZpLVZOIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20ifQ.PaGBuYyZbLdINEGLFPCeeH0FmKkSFiYf6Y1jmNzlxJeBZ96dlnxqmL0QrUIqhTqGtpC6rKxW8XDqcUT-_XlkGmVejM9sZNmz6g3SeL-zS081JhI1jiY7W63YXUcqQbViEfOsfBWTh_VoUh_0-yHDs58IlnNDzb0BGQsyb_2Ja-3X5yeuvTnfnXnfO5o3sJj---ntK4lb01UZNPvAZSRUV_3iNY3o17oPw4o52HCNL-n4nBgInSCiTbeiQDgU80sAsK0obxlZYyyDiWukL1qDnNQpAy5RwTNB2L9JYTzRs2vAXI3lf8R_2SdvVVhO9kmPLsFSulaVMP97CoEfNX-W5Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.ezgo.vn:8284/task-manager-service/api/task?type-code=LOGBOOK_ME&offset=0&limit=2",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"ezgo",
+								"vn"
+							],
+							"port": "8284",
+							"path": [
+								"task-manager-service",
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "type-code",
+									"value": "LOGBOOK_ME"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "79- Tạo task để bắt đầu ghi sổ",
 					"event": [
 						{
